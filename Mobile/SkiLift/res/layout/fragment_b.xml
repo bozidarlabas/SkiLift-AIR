@@ -10,42 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:src="@drawable/smartwatch_mockup" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:orientation="vertical" >
-
-        <Button
-            android:id="@+id/btnColor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/mybutton"
-            android:text="@string/btnColor"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnxxx"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/mybutton"
-            android:text="@string/btnColor"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/mybutton"
-            android:text="@string/vrati"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
+        android:src="@drawable/smartwatch_mock2" />
 
 </LinearLayout>

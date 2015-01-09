@@ -2187,11 +2187,12 @@ containing a value of this type.
         public static final int powered_by_google_dark=0x7f020063;
         public static final int powered_by_google_light=0x7f020064;
         public static final int smartwatch_mock=0x7f020065;
-        public static final int smartwatch_mockup=0x7f020066;
-        public static final int text_bg=0x7f020067;
-        public static final int thumbnail_list_item=0x7f020068;
-        public static final int widget_default_userpic_bg=0x7f020069;
-        public static final int widget_frame=0x7f02006a;
+        public static final int smartwatch_mock2=0x7f020066;
+        public static final int smartwatch_mockup=0x7f020067;
+        public static final int text_bg=0x7f020068;
+        public static final int thumbnail_list_item=0x7f020069;
+        public static final int widget_default_userpic_bg=0x7f02006a;
+        public static final int widget_frame=0x7f02006b;
     }
     public static final class id {
         public static final int action_bar=0x7f060064;
@@ -2211,15 +2212,15 @@ containing a value of this type.
         public static final int always=0x7f06000d;
         public static final int am_pm=0x7f06003f;
         public static final int beginning=0x7f060012;
-        public static final int body=0x7f060077;
+        public static final int body=0x7f060074;
         public static final int book_now=0x7f06004d;
         public static final int bottom=0x7f060016;
-        public static final int btnColor=0x7f060073;
-        public static final int btnFilter=0x7f060080;
-        public static final int btnInf=0x7f060081;
-        public static final int btnUI=0x7f06007f;
-        public static final int btnxxx=0x7f060074;
-        public static final int button3=0x7f060075;
+        public static final int btnBack=0x7f06008b;
+        public static final int btnFilter=0x7f06007d;
+        public static final int btnInf=0x7f06007e;
+        public static final int btnSelect=0x7f06008c;
+        public static final int btnUI=0x7f06007c;
+        public static final int btnUIName=0x7f06008a;
         public static final int buyButton=0x7f060049;
         public static final int buy_now=0x7f06004c;
         public static final int buy_with_google=0x7f06004b;
@@ -2230,7 +2231,7 @@ containing a value of this type.
         public static final int classic=0x7f06004e;
         public static final int collapseActionView=0x7f06000f;
         public static final int constant=0x7f060026;
-        public static final int content_container=0x7f060078;
+        public static final int content_container=0x7f060075;
         public static final int days_of_month=0x7f060031;
         public static final int days_of_month_digit1=0x7f060033;
         public static final int days_of_month_digit2=0x7f060032;
@@ -2243,15 +2244,15 @@ containing a value of this type.
         public static final int default_activity_button=0x7f060057;
         public static final int dialog=0x7f060010;
         public static final int disableHome=0x7f06000a;
-        public static final int divider=0x7f06007b;
+        public static final int divider=0x7f060078;
         public static final int dropdown=0x7f060011;
         public static final int edit_query=0x7f060066;
         public static final int end=0x7f060014;
         public static final int expand_activities_button=0x7f060055;
         public static final int expanded_menu=0x7f06005b;
-        public static final int gallery=0x7f06007c;
+        public static final int gallery=0x7f060079;
         public static final int grayscale=0x7f06004f;
-        public static final int header=0x7f06007a;
+        public static final int header=0x7f060077;
         public static final int holo_dark=0x7f060044;
         public static final int holo_light=0x7f060045;
         public static final int home=0x7f060017;
@@ -2264,12 +2265,12 @@ containing a value of this type.
         public static final int icon=0x7f060059;
         public static final int ifRoom=0x7f06000c;
         public static final int image=0x7f060056;
-        public static final int imageView1=0x7f06007e;
+        public static final int imageView1=0x7f06007b;
         public static final int ivUIOne=0x7f060072;
-        public static final int ivUITwo=0x7f060076;
+        public static final int ivUITwo=0x7f060073;
         public static final int left=0x7f060020;
         public static final int listMode=0x7f060002;
-        public static final int listView=0x7f06007d;
+        public static final int listView=0x7f06007a;
         public static final int list_item=0x7f060058;
         public static final int match_parent=0x7f060025;
         public static final int middle=0x7f060013;
@@ -2283,13 +2284,13 @@ containing a value of this type.
         public static final int never=0x7f06000b;
         public static final int none=0x7f060004;
         public static final int normal=0x7f060001;
-        public static final int pager=0x7f06008c;
+        public static final int pager=0x7f060089;
         public static final int production=0x7f060046;
         public static final int progress_circular=0x7f06001e;
         public static final int progress_horizontal=0x7f06001f;
         public static final int radio=0x7f06005e;
         public static final int right=0x7f060021;
-        public static final int row1=0x7f060079;
+        public static final int row1=0x7f060076;
         public static final int sandbox=0x7f060047;
         public static final int satellite=0x7f060041;
         public static final int search_badge=0x7f060068;
@@ -2310,16 +2311,16 @@ containing a value of this type.
         public static final int showCustom=0x7f060009;
         public static final int showHome=0x7f060006;
         public static final int showTitle=0x7f060008;
-        public static final int smart_watch_notification_widget_background=0x7f060082;
-        public static final int smart_watch_notification_widget_text_background=0x7f060083;
-        public static final int smart_watch_notification_widget_text_name=0x7f060086;
-        public static final int smart_watch_notification_widget_text_time=0x7f060084;
-        public static final int smart_watch_notification_widget_text_title=0x7f060085;
-        public static final int smart_watch_widget_custom_image=0x7f060087;
-        public static final int smart_watch_widget_custom_text_view=0x7f060088;
-        public static final int smart_watch_widget_event_counter_badge=0x7f06008a;
-        public static final int smart_watch_widget_event_counter_text=0x7f06008b;
-        public static final int smart_watch_widget_icon=0x7f060089;
+        public static final int smart_watch_notification_widget_background=0x7f06007f;
+        public static final int smart_watch_notification_widget_text_background=0x7f060080;
+        public static final int smart_watch_notification_widget_text_name=0x7f060083;
+        public static final int smart_watch_notification_widget_text_time=0x7f060081;
+        public static final int smart_watch_notification_widget_text_title=0x7f060082;
+        public static final int smart_watch_widget_custom_image=0x7f060084;
+        public static final int smart_watch_widget_custom_text_view=0x7f060085;
+        public static final int smart_watch_widget_event_counter_badge=0x7f060087;
+        public static final int smart_watch_widget_event_counter_text=0x7f060088;
+        public static final int smart_watch_widget_icon=0x7f060086;
         public static final int split_action_bar=0x7f06001b;
         public static final int strict_sandbox=0x7f060048;
         public static final int submit_area=0x7f06006f;
@@ -2400,6 +2401,7 @@ containing a value of this type.
         public static final int smart_watch_widget=0x7f030022;
         public static final int smartwatchui=0x7f030023;
         public static final int support_simple_spinner_dropdown_item=0x7f030024;
+        public static final int ui2_item_red=0x7f030025;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -2466,7 +2468,11 @@ containing a value of this type.
     Otherwise it complains about no res folder. 
          */
         public static final int app_name=0x7f0b000f;
-        public static final int btnColor=0x7f0b0057;
+        public static final int btnBack=0x7f0b0058;
+        public static final int btnFilter=0x7f0b0054;
+        public static final int btnInfo=0x7f0b0053;
+        public static final int btnSelect=0x7f0b0059;
+        public static final int btnUIName=0x7f0b0057;
         public static final int button_send_notification=0x7f0b0047;
         public static final int clear_failure=0x7f0b0044;
         public static final int clear_success=0x7f0b0043;
@@ -2602,7 +2608,6 @@ containing a value of this type.
         public static final int prezime=0x7f0b004f;
         public static final int prijava=0x7f0b004a;
         public static final int registracija=0x7f0b004b;
-        public static final int secondOption=0x7f0b0053;
         /**  Name of source, shown in preferences 
          */
         public static final int source_name=0x7f0b0036;
@@ -2612,7 +2617,6 @@ containing a value of this type.
          */
         public static final int text_to_speech=0x7f0b003a;
         public static final int title_activity_fragment=0x7f0b0055;
-        public static final int vrati=0x7f0b0054;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */

@@ -42,10 +42,12 @@
     <string name="email">Email</string>
     <string name="potvrdaLozinke">Potvrda lozinke</string>
     <string name="firstOption">SmartWatch UI</string>
-    <string name="secondOption">Information</string>
-    <string name="vrati">Vrati opremu</string>
+    <string name="btnInfo">Information</string>
+    <string name="btnFilter">Filter Lifts</string>
     <string name="title_activity_fragment">FragmentA</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-     <string name="btnColor">Color</string>
+     <string name="btnUIName">Color List</string>
+     <string name="btnBack">Back</string>
+     <string name="btnSelect">Select</string>
 
 </resources>

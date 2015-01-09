@@ -47,11 +47,15 @@ import com.sonyericsson.extras.liveware.extension.util.control.ControlListItem;
  * ListControlExtension displays a scrollable list, based on a string array.
  * Tapping on list items opens a swipable detail view.
  */
+
 public class ListControlExtension extends ManagedControlExtension {
 
     /**
      * String array with sample data to be displayed in list.
      */
+	
+	
+	
     public static String[] mListContent = {
             "1", "2", "3", "4", "5",
             "6", "7", "8", "9", "10"
@@ -67,6 +71,8 @@ public class ListControlExtension extends ManagedControlExtension {
      * @see ManagedControlExtension#ManagedControlExtension(Context, String,
      *      ControlManagerCostanza, Intent)
      */
+    
+    
     public ListControlExtension(Context context, String hostAppPackageName,
             ControlManagerSmartWatch2 controlManager, Intent intent) {
         super(context, hostAppPackageName, controlManager, intent);

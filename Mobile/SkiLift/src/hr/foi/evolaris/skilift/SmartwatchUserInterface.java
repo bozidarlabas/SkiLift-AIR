@@ -2,13 +2,12 @@ package hr.foi.evolaris.skilift;
 
 import hr.foi.evolaris.skilift.fragments.FragmentA;
 import hr.foi.evolaris.skilift.fragments.FragmentB;
+import hr.foi.evolaris.skilift.interfaces.OnChangeSmartWatchUI;
 import hr.foi.evolaris.skilift.utils.Constants;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
 import android.app.FragmentTransaction;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -16,28 +15,42 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.sonymobile.smartextension.hellonotification.R;
 
 
-public class SmartwatchUserInterface extends FragmentActivity implements TabListener{
+public class SmartwatchUserInterface extends FragmentActivity implements TabListener, OnChangeSmartWatchUI{
 
 	ActionBar actionBar;
 	ViewPager viewPager;
-	int smartwatchNumOfUI = 2;
+	private int smartwatchNumOfUI = 2, currentUI;
+	private Button btnUIName;
 	
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
 		setContentView(R.layout.smartwatchui);
 		
+		//disable button (this is not text view for design reason)
+		btnUIName = (Button) findViewById(R.id.btnUIName);
+		btnUIName.setEnabled(false);
+		currentUI = 0;
+		
 		viewPager = (ViewPager)findViewById(R.id.pager);
 		viewPager.setAdapter(new MyAdapter(getSupportFragmentManager()));
+		
+		
 		viewPager.setOnPageChangeListener(new OnPageChangeListener() {
+		
 			
 			@Override
 			public void onPageSelected(int position) {
 				actionBar.setSelectedNavigationItem(position);
+				btnUIName.setText(Constants.uiNames[position]);
+				currentUI = position;
 			}
 			
 			@Override
@@ -55,11 +68,11 @@ public class SmartwatchUserInterface extends FragmentActivity implements TabList
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
 		ActionBar.Tab tab1 = actionBar.newTab();
-		tab1.setText(Constants.uiNameOne);
+		tab1.setText(Constants.uiNames[0]);
 		tab1.setTabListener(this);
 		
 		ActionBar.Tab tab2 = actionBar.newTab();
-		tab2.setText(Constants.uiNameTwo);
+		tab2.setText(Constants.uiNames[1]);
 		tab2.setTabListener(this);
 		
 		actionBar.addTab(tab1);
@@ -117,6 +130,23 @@ public class SmartwatchUserInterface extends FragmentActivity implements TabList
 		public int getCount() {
 			return smartwatchNumOfUI;
 		}
+	}
+
+	public void selectUI(View v){
+		setUserInterface();
+	}
+	
+	@Override
+	public void setUserInterface() {
+		Log.d("ui",Integer.toString(currentUI));
+		
+	}
+
+
+	@Override
+	public int returnCurrentUserInterface() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }
