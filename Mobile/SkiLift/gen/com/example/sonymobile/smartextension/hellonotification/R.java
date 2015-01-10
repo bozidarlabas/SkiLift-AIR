@@ -2190,9 +2190,13 @@ containing a value of this type.
         public static final int smartwatch_mock2=0x7f020066;
         public static final int smartwatch_mockup=0x7f020067;
         public static final int text_bg=0x7f020068;
-        public static final int thumbnail_list_item=0x7f020069;
-        public static final int widget_default_userpic_bg=0x7f02006a;
-        public static final int widget_frame=0x7f02006b;
+        public static final int textview_circle_design_green=0x7f020069;
+        public static final int textview_circle_design_orange=0x7f02006a;
+        public static final int textview_circle_design_red=0x7f02006b;
+        public static final int textview_circle_design_yellow=0x7f02006c;
+        public static final int thumbnail_list_item=0x7f02006d;
+        public static final int widget_default_userpic_bg=0x7f02006e;
+        public static final int widget_frame=0x7f02006f;
     }
     public static final class id {
         public static final int action_bar=0x7f060064;
@@ -2213,6 +2217,7 @@ containing a value of this type.
         public static final int am_pm=0x7f06003f;
         public static final int beginning=0x7f060012;
         public static final int body=0x7f060074;
+        public static final int body2=0x7f06008e;
         public static final int book_now=0x7f06004d;
         public static final int bottom=0x7f060016;
         public static final int btnBack=0x7f06008b;
@@ -2328,6 +2333,7 @@ containing a value of this type.
         public static final int terrain=0x7f060042;
         public static final int title=0x7f06005a;
         public static final int top=0x7f060015;
+        public static final int tvavailability=0x7f06008d;
         public static final int up=0x7f060018;
         public static final int useLogo=0x7f060005;
         public static final int withText=0x7f06000e;
@@ -2401,7 +2407,10 @@ containing a value of this type.
         public static final int smart_watch_widget=0x7f030022;
         public static final int smartwatchui=0x7f030023;
         public static final int support_simple_spinner_dropdown_item=0x7f030024;
-        public static final int ui2_item_red=0x7f030025;
+        public static final int ui2_item_green=0x7f030025;
+        public static final int ui2_item_orange=0x7f030026;
+        public static final int ui2_item_red=0x7f030027;
+        public static final int ui2_item_yellow=0x7f030028;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
