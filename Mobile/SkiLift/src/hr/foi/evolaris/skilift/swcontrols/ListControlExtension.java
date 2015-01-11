@@ -35,6 +35,11 @@ package hr.foi.evolaris.skilift.swcontrols;
 import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
 import hr.foi.evolaris.skilift.SmartwatchUserInterface;
 import hr.foi.evolaris.skilift.interfaces.OnChangeSmartWatchLayout;
+import hr.foi.evolaris.skilift.model.Lift;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -56,6 +61,8 @@ public class ListControlExtension extends ManagedControlExtension implements
 	 * String array with sample data to be displayed in list.
 	 */
 
+	public static ArrayList<Lift> lifts = new ArrayList<>();
+	
 	public static String[] mListContent = { "1", "2", "3", "4", "5", "6", "7",
 			"8", "9", "10" };
 
@@ -74,6 +81,15 @@ public class ListControlExtension extends ManagedControlExtension implements
 		super(context, hostAppPackageName, controlManager, intent);
 		Log.d(AdvancedLayoutsExtensionService.LOG_TAG,
 				"ListControl constructor");
+		
+		for(int i = 0; i < 10; i++){
+			Lift lift = new Lift();
+			lift.setName("Lift " + (i+1));
+			lift.setFilter(true);
+			lift.setCapacity(i+1);
+			lifts.add(i, object)
+		}
+		
 	}
 
 	@Override

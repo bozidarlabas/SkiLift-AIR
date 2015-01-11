@@ -70,7 +70,7 @@ public class RegisterApp extends AsyncTask<Void, Void, String> {
 	 }
 	 //iz main u hello
 	 private void storeRegistrationId(Context ctx, String regid) {
-	  final SharedPreferences prefs = ctx.getSharedPreferences(HelloNotificationPreferenceActivity.class.getSimpleName(),
+	  final SharedPreferences prefs = ctx.getSharedPreferences(MainActivity.class.getSimpleName(),
 	             Context.MODE_PRIVATE);
 	     Log.i(TAG, "Saving regId on app version " + appVersion);
 	     SharedPreferences.Editor editor = prefs.edit();

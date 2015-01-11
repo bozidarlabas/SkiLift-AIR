@@ -111,7 +111,7 @@ public class AdvancedLayoutsRegistrationInformation extends RegistrationInformat
         ContentValues values = new ContentValues();
 
         values.put(Registration.ExtensionColumns.CONFIGURATION_ACTIVITY,
-                HelloNotificationPreferenceActivity.class.getName());
+                MainActivity.class.getName());
         values.put(Registration.ExtensionColumns.CONFIGURATION_TEXT,
                 mContext.getString(R.string.configuration_text));
         values.put(Registration.ExtensionColumns.NAME, mContext.getString(R.string.extension_name));
