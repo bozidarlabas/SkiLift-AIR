@@ -50,7 +50,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/mybutton"
             android:text="@string/btnBack"
-            android:onClick="back"
+            android:onClick="goBack"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 

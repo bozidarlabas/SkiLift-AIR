@@ -21,9 +21,9 @@ public class test extends Activity {
 			"Lift5", "Lift6", "Lift7", "Lift8", "Lift9", "Lift10" };
 
 	/** Called when the activity is first created. */
-	private ExpandListAdapter ExpAdapter;
+	public static ExpandListAdapter ExpAdapter;
 	private ArrayList<Lift> ExpListItems;
-	private ExpandableListView ExpandList;
+	public static ExpandableListView ExpandList;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,9 @@ public class test extends Activity {
 				ExpListItems);
 		ExpandList.setAdapter(ExpAdapter);
 	}
-
+	
 	public ArrayList<Lift> SetStandardGroups() {
-		return ListControlExtension.lifts;
+		return ListControlExtension.lifts2;
 /*
 		ArrayList<Lift> list = new ArrayList<Lift>();
 		ArrayList<LiftDetail> list2 = new ArrayList<LiftDetail>();

@@ -148,4 +148,8 @@ public class SmartwatchUserInterface extends FragmentActivity implements TabList
 		return selectedSmartWatchUIIndex;
 	}
 	
+	public void goBack(View v){
+		this.onBackPressed();
+	}
+	
 }

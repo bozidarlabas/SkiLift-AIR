@@ -1,11 +1,15 @@
 package hr.foi.evolaris.skilift.expandListView;
 
+import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
 import hr.foi.evolaris.skilift.model.Lift;
 import hr.foi.evolaris.skilift.model.LiftDetail;
+import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +22,13 @@ import android.widget.TextView;
 
 import com.example.sonymobile.smartextension.hellonotification.R;
 
+
+
 public class ExpandListAdapter extends BaseExpandableListAdapter {
 
+	public static ArrayList<Lift> lifts = new ArrayList<>();
+	public static ArrayList<Lift> liftsBuffer = new ArrayList<>();
+	
 	private LayoutInflater inflater;
 	
 	private Context context;
@@ -52,13 +61,19 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 		// Get grouprow.xml file checkbox elements
 		CheckBox checkbox = (CheckBox) convertView
 				.findViewById(R.id.checkbox);
-		checkbox.setChecked(group.getShowLift());
+		checkbox.setChecked(load(group.getName()));
 
 		// Set CheckUpdateListener for CheckBox (see below
 		// CheckUpdateListener class)
 		checkbox.setOnCheckedChangeListener(new CheckUpdateListener(group));
 
 		return convertView;
+	}
+	
+	public boolean load(String key){
+		SharedPreferences sharedPreferences = context.getSharedPreferences("MyData", Context.MODE_PRIVATE);
+		boolean showLift = sharedPreferences.getBoolean(key,false);
+		return showLift;
 	}
 
 	// This Function used to inflate child rows view
@@ -156,13 +171,54 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
 		public void onCheckedChanged(CompoundButton buttonView,
 				boolean isChecked) {
+			
+			String liftName = parent.getName();
+			save(liftName,isChecked);
+			
 			Log.i("onCheckedChanged", "isChecked: " + isChecked);
-			parent.setShowLift(isChecked);
+			//parent.setShowLift(isChecked);
+			
+			if(isChecked){
+				changeList(parent);
+			}
+			/*else{
+				for (Lift lift : liftsBuffer) {
+					if(lift.getName().equals(parent.getName())){
+						ListControlExtension.lifts.add(parent);
+						liftsBuffer.remove(lift);
+					}
+				}
+			}*/
+			
+			
+			
+			AdvancedLayoutsExtensionService.sm.resume();
+			//test.ExpAdapter.notifyDataSetChanged();
+			//AdvancedLayoutsExtensionService.sm.resume();
+			
 
-			//((ExpandListAdapter) getExpandableListAdapter())
-				//	.notifyDataSetChanged();
-
-			final Boolean checked = parent.getShowLift();
+		}
+		
+		
+		
+		public void save(String key, boolean value){
+			SharedPreferences sharedPreferences = context.getSharedPreferences("MyData", Context.MODE_PRIVATE);
+			SharedPreferences.Editor editor =  sharedPreferences.edit();
+			editor.putBoolean(key, value);
+			editor.commit();
+		}
+		
+		private void changeList(Lift parent){
+			ArrayList<Lift> liftCopy = new ArrayList<>();
+			for (Lift lift : ListControlExtension.lifts) {
+				if(!lift.getName().equals(parent.getName())){
+					liftCopy.add(lift);
+				}
+			}
+			ListControlExtension.lifts.clear();
+			ListControlExtension.lifts = new ArrayList<Lift>(liftCopy);
+			//ListControlExtension.lifts.addAll(liftCopy);
+			//ListControlExtension.lifts = liftCopy;
 		}
 	}
 	/***********************************************************************/

@@ -1,5 +1,8 @@
 package hr.foi.evolaris.skilift;
 
+import hr.foi.evolaris.skilift.expandListView.ExpandListAdapter;
+import hr.foi.evolaris.skilift.expandListView.test;
+import hr.foi.evolaris.skilift.model.Lift;
 import hr.foi.evolaris.skilift.model.LiftDetail;
 import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 
@@ -9,13 +12,14 @@ import java.util.Iterator;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
-
 
 public class GcmIntentService extends IntentService {
 
@@ -35,7 +39,7 @@ public class GcmIntentService extends IntentService {
 
 	@Override
 	protected void onHandleIntent(Intent intent) {
-		//dobivam podatke u obliku json-a
+		// dobivam podatke u obliku json-a
 		Bundle extras = intent.getExtras();
 		for (String key : extras.keySet()) {
 			Object value = extras.get(key);
@@ -66,14 +70,14 @@ public class GcmIntentService extends IntentService {
 			 */
 			if (GoogleCloudMessaging.MESSAGE_TYPE_SEND_ERROR
 					.equals(messageType)) {
-				//ListControlExtension.mListContent = mapa;
-				//sendNotification("Send error: " + extras.toString(), mapa);
+				// ListControlExtension.mListContent = mapa;
+				// sendNotification("Send error: " + extras.toString(), mapa);
 
 			} else if (GoogleCloudMessaging.MESSAGE_TYPE_DELETED
 					.equals(messageType)) {
-				//sendNotification(
-				//		"Deleted messages on server: " + extras.toString(),
-				//		mapa);
+				// sendNotification(
+				// "Deleted messages on server: " + extras.toString(),
+				// mapa);
 				// If it's a regular GCM message, do some work.
 			} else if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE
 					.equals(messageType)) {
@@ -85,46 +89,63 @@ public class GcmIntentService extends IntentService {
 		// Release the wake lock provided by the WakefulBroadcastReceiver.
 		GcmBroadcastReceiver.completeWakefulIntent(intent);
 	}
-	
-	private void getData(HashMap<String, String> mapa){
+
+	private void getData(HashMap<String, String> mapa) {
 		String data = new String();
 		String liftName = new String();
 		int i = 0;
 		Iterator it = mapa.entrySet().iterator();
-		
+		ArrayList<Lift> liftCopy = new ArrayList<>();
 		while (it.hasNext()) {
+
 			ArrayList<LiftDetail> list2 = new ArrayList<LiftDetail>();
 			HashMap.Entry pairs = (HashMap.Entry) it.next();
-			
+
 			data = pairs.getValue().toString();
-			Log.d("poz", ""+data);
+			Log.d("poz", "" + i);
+			// liftsnumber = name
+
 			
-			//liftsnumber = name
+			
 			liftName = pairs.getKey().toString();
-			ListControlExtension.lifts.get(i).setName(liftName);
+			if(!load(liftName)){
+				Lift lift = new Lift();
+				lift.setName(liftName);
+				LiftDetail liftDetail = new LiftDetail();
+				liftDetail.setName(data);
+				liftDetail.setTag("" + i);
+				list2.add(liftDetail);
+
+				LiftDetail liftDetail2 = new LiftDetail();
+				liftDetail2.setName("" + i);
+				liftDetail2.setTag("" + i);
+				list2.add(liftDetail2);
+
+				lift.setItems(list2);// set capacity
+				Log.d("redd", "" + load(liftName));
+				liftCopy.add(lift);
+			}
 			
-			LiftDetail liftDetail = new LiftDetail();
-			liftDetail.setName(data);
-			liftDetail.setTag("" + i);
-			list2.add(liftDetail);
-			
-			LiftDetail liftDetail2 = new LiftDetail();
-			liftDetail2.setName(""+i);
-			liftDetail2.setTag("" + i);
-			list2.add(liftDetail2);
-			
-			ListControlExtension.lifts.get(i).setItems(list2);//set capacity
-			Log.d("poz2", ""+ListControlExtension.lifts.get(i).getItems().get(0).getName());
 			
 			i++;
 			it.remove(); // avoids a ConcurrentModificationException
 		}
-		//Main List (Display color and lift)
-		//ListControlExtension.LiftsNumber = liftsNumber;
-		//Detail List(Display capacity of clicked lift)
-		//GalleryTestControl.liftsNumber = data;
-		//GalleryTestControl.liftsName = liftsNumber;
-		AdvancedLayoutsExtensionService.sm.resume();
+		ListControlExtension.lifts.clear();
+		ListControlExtension.lifts = liftCopy;
 		
+		// Main List (Display color and lift)
+		// ListControlExtension.LiftsNumber = liftsNumber;
+		// Detail List(Display capacity of clicked lift)
+		// GalleryTestControl.liftsNumber = data;
+		// GalleryTestControl.liftsName = liftsNumber;
+		AdvancedLayoutsExtensionService.sm.resume();
+
+	}
+
+	public boolean load(String key) {
+		SharedPreferences sharedPreferences = this.getSharedPreferences(
+				"MyData", Context.MODE_PRIVATE);
+		boolean showLift = sharedPreferences.getBoolean(key, false);
+		return showLift;
 	}
 }

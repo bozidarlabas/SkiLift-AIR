@@ -1,11 +1,11 @@
 package hr.foi.evolaris.skilift;
 
 import hr.foi.evolaris.skilift.expandListView.test;
-import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 import hr.foi.evolaris.skilift.utils.Constants;
 import android.app.Activity;
-import android.app.ExpandableListActivity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
@@ -27,7 +27,6 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
  */
 
 public class MainActivity extends Activity {
-
 
 	private Button btnSmartwatchUI, btnFilterData, btnOpenInformation;
 	private GoogleCloudMessaging gcm;
@@ -54,8 +53,21 @@ public class MainActivity extends Activity {
 	}
 
 	public void openInformation(View v) {
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+		alertDialogBuilder.setTitle("Ski lift waiting time display on smartwatch");
+		alertDialogBuilder.setMessage("The app show an indicator icon for a list of all the roughly ten lifts in the Schladming-Planai ski resort.");
+		alertDialogBuilder.setPositiveButton("Back",
+				new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+
+					}
+				});
+
+		AlertDialog alertDialog = alertDialogBuilder.create();
+		alertDialog.show();
 		register();
-		Log.d("indformacije", "ovaram infromacije");
 	}
 
 	// Goolge Cloud Messaging Registration
@@ -117,8 +129,7 @@ public class MainActivity extends Activity {
 		// This sample app persists the registration ID in shared preferences,
 		// but
 		// how you store the regID in your app is up to you.
-		return getSharedPreferences(
-				MainActivity.class.getSimpleName(),
+		return getSharedPreferences(MainActivity.class.getSimpleName(),
 				Context.MODE_PRIVATE);
 	}
 

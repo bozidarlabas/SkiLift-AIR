@@ -66,6 +66,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 	 */
 
 	public static ArrayList<Lift> lifts = new ArrayList<>();
+	public static ArrayList<Lift> lifts2 = new ArrayList<>();
 	public static boolean starting = false;
 	
 	
@@ -92,7 +93,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 			for(int i = 0; i < 10; i++){
 				ArrayList<LiftDetail> list2 = new ArrayList<LiftDetail>();
 				Lift gru1 = new Lift();
-				gru1.setName("lift"+i);
+				gru1.setName("lift"+(i+1));
 				gru1.setShowLift(Constants.filterOff);
 				
 				list2.add(addDetailAboutLift(i));
@@ -100,6 +101,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 				
 				gru1.setItems(list2);
 				lifts.add(gru1);
+				lifts2.add(gru1);
 			}
 			starting = true;
 		}
@@ -187,7 +189,8 @@ public class ListControlExtension extends ManagedControlExtension implements
 	 */
 
 	protected ControlListItem createControlListItem(int position) {
-
+		
+		
 		ControlListItem item = new ControlListItem();
 		String capacity = lifts.get(position).getItems().get(0).getName(); //capacity
 		
