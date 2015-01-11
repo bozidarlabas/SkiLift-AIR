@@ -75,7 +75,7 @@ public class GalleryTestControl extends ManagedControlExtension {
     public void onResume() {
         Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onResume");
         showLayout(R.layout.layout_test_gallery, null);
-        sendListCount(R.id.gallery, liftsNumber.length);
+        sendListCount(R.id.gallery, ListControlExtension.lifts.size());
 
         // If requested, move to the correct position in the list.
         int startPosition = getIntent().getIntExtra(EXTRA_INITIAL_POSITION, 0);
@@ -128,12 +128,12 @@ public class GalleryTestControl extends ManagedControlExtension {
         // Header data
         Bundle headerBundle = new Bundle();
         headerBundle.putInt(Control.Intents.EXTRA_LAYOUT_REFERENCE, R.id.title);
-        headerBundle.putString(Control.Intents.EXTRA_TEXT, liftsNumber[position]);
+        headerBundle.putString(Control.Intents.EXTRA_TEXT, ListControlExtension.lifts.get(position).getCapacity());
 
         // Body data
         Bundle bodyBundle = new Bundle();
         bodyBundle.putInt(Control.Intents.EXTRA_LAYOUT_REFERENCE, R.id.body);
-        bodyBundle.putString(Control.Intents.EXTRA_TEXT, liftsName[position]);
+        bodyBundle.putString(Control.Intents.EXTRA_TEXT, ListControlExtension.lifts.get(position).getName());
 
         item.layoutData = new Bundle[2];
         item.layoutData[0] = headerBundle;

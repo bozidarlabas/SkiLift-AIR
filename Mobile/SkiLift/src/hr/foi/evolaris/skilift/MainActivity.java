@@ -1,6 +1,7 @@
 package hr.foi.evolaris.skilift;
 
 import hr.foi.evolaris.skilift.expandListView.test;
+import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 import hr.foi.evolaris.skilift.utils.Constants;
 import android.app.Activity;
 import android.app.ExpandableListActivity;

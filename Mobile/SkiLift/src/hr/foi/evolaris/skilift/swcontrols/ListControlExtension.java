@@ -62,12 +62,9 @@ public class ListControlExtension extends ManagedControlExtension implements
 	 */
 
 	public static ArrayList<Lift> lifts = new ArrayList<>();
+	public static boolean starting = false;
 	
-	public static String[] mListContent = { "1", "2", "3", "4", "5", "6", "7",
-			"8", "9", "10" };
-
-	public static String[] LiftsNumber = { "Lift1", "Lift2", "Lift3", "Lift4", "Lift5", "Lift6", "Lift7",
-		"Lift8", "Lift9", "Lift10" };
+	
 
 	protected int mLastKnowPosition = 0;
 
@@ -81,22 +78,32 @@ public class ListControlExtension extends ManagedControlExtension implements
 		super(context, hostAppPackageName, controlManager, intent);
 		Log.d(AdvancedLayoutsExtensionService.LOG_TAG,
 				"ListControl constructor");
+		Log.d("tete", "tete");
 		
-		for(int i = 0; i < 10; i++){
-			Lift lift = new Lift();
-			lift.setName("Lift " + (i+1));
-			lift.setFilter(true);
-			lift.setCapacity(i+1);
-			lifts.add(i, object)
+		if(!starting){
+			for(int i = 0; i < 10; i++){
+				Lift lift = new Lift();
+				lift.setName("Lift " + (i+1));
+				lift.setFilter(true);
+				lift.setCapacity("" + i);
+				lifts.add(i, lift);
+			}
+			starting = true;
 		}
 		
+		
 	}
+	
 
 	@Override
 	public void onResume() {
+		
+
+		
+		
 		Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onResume");
 		showLayout(R.layout.layout_test_list, null);
-		sendListCount(R.id.listView, mListContent.length);
+		sendListCount(R.id.listView, lifts.size());
 
 		// If requested, move to the correct position in the list.
 		int startPosition = getIntent().getIntExtra(
@@ -169,7 +176,8 @@ public class ListControlExtension extends ManagedControlExtension implements
 	protected ControlListItem createControlListItem(int position) {
 
 		ControlListItem item = new ControlListItem();
-		int numberIndicator = Integer.parseInt(mListContent[position]);
+		String capacity = lifts.get(position).getCapacity();
+		int numberIndicator = Integer.parseInt(capacity);
 
 		item.dataXmlLayout = changeSmartWatchLayout(numberIndicator, item);
 		item.layoutReference = R.id.listView;
@@ -244,17 +252,17 @@ public class ListControlExtension extends ManagedControlExtension implements
 
 		switch (SmartwatchUserInterface.selectedSmartWatchUIIndex) {
 		case 0:
-			bodyBundle.putString(Control.Intents.EXTRA_TEXT, LiftsNumber[position]);
+			bodyBundle.putString(Control.Intents.EXTRA_TEXT, lifts.get(position).getName());
 			item.layoutData[0] = bodyBundle;
 			return item.layoutData;
 		case 1:
 			//Left Circle Lift Number
-			bodyBundle.putString(Control.Intents.EXTRA_TEXT, LiftsNumber[position].substring(4));
+			bodyBundle.putString(Control.Intents.EXTRA_TEXT, lifts.get(position).getName().substring(4));
 			item.layoutData[0] = bodyBundle;
 			
 			Bundle availabilityBundle = new Bundle();
 			availabilityBundle.putInt(Control.Intents.EXTRA_LAYOUT_REFERENCE, R.id.tvavailability);
-			availabilityBundle.putString(Control.Intents.EXTRA_TEXT, "Availability: " + mListContent[position] + "%");
+			availabilityBundle.putString(Control.Intents.EXTRA_TEXT, "Availability: " + lifts.get(position).getCapacity() + "%");
 
 			item.layoutData[1] = availabilityBundle;
 			return item.layoutData;

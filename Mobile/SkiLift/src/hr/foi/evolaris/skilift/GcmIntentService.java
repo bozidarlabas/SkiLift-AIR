@@ -1,6 +1,5 @@
 package hr.foi.evolaris.skilift;
 
-import hr.foi.evolaris.skilift.swcontrols.GalleryTestControl;
 import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 
 import java.util.HashMap;
@@ -86,25 +85,27 @@ public class GcmIntentService extends IntentService {
 	}
 	
 	private void getData(HashMap<String, String> mapa){
-		String data[] = new String[10];
-		String liftsNumber[] = new String[10];
+		String data = new String();
+		String liftName = new String();
 		int i = 0;
 		Iterator it = mapa.entrySet().iterator();
 		while (it.hasNext()) {
 			HashMap.Entry pairs = (HashMap.Entry) it.next();
-			//Log.d("kiki", pairs.getValue().toString());
-			data[i] = pairs.getValue().toString();
-			liftsNumber[i++] = pairs.getKey().toString();
+			
+			data = pairs.getValue().toString();
+			ListControlExtension.lifts.get(i).setCapacity(data);
+			//liftsnumber = name
+			liftName = pairs.getKey().toString();
+			ListControlExtension.lifts.get(i).setName(liftName);
+			i++;
 			it.remove(); // avoids a ConcurrentModificationException
 		}
-		mapa2 = mapa;
 		//Main List (Display color and lift)
-		ListControlExtension.mListContent = data;
-		ListControlExtension.LiftsNumber = liftsNumber;
+		//ListControlExtension.LiftsNumber = liftsNumber;
 		//Detail List(Display capacity of clicked lift)
-		GalleryTestControl.liftsNumber = data;
-		GalleryTestControl.liftsName = liftsNumber;
-		
+		//GalleryTestControl.liftsNumber = data;
+		//GalleryTestControl.liftsName = liftsNumber;
 		AdvancedLayoutsExtensionService.sm.resume();
+		
 	}
 }

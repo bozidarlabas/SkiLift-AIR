@@ -4,7 +4,7 @@ package hr.foi.evolaris.skilift.model;
 public class Lift {
 
 	private String name;
-	private int capacity;
+	private String capacity;
 	private boolean filter;
 	
 	public String getName() {
@@ -15,11 +15,11 @@ public class Lift {
 		this.name = name;
 	}
 	
-	public int getCapacity(){
+	public String getCapacity(){
 		return this.capacity;
 	}
 	
-	public void setCapacity(int capacity){
+	public void setCapacity(String capacity){
 		this.capacity = capacity;
 	}
 	
