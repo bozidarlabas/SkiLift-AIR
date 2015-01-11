@@ -33,6 +33,7 @@ Copyright (c) 2011-2013, Sony Mobile Communications AB
 package hr.foi.evolaris.skilift;
 
 import hr.foi.evolaris.skilift.swcontrols.ControlManagerSmartWatch2;
+import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 import android.util.Log;
 
 import com.sonyericsson.extras.liveware.extension.util.ExtensionService;
@@ -58,6 +59,7 @@ public class AdvancedLayoutsExtensionService extends ExtensionService {
     @Override
     public void onCreate() {
         super.onCreate();
+        ListControlExtension.setList();
         Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "Service: onCreate");
     }
 

@@ -11,5 +11,8 @@ public class Constants {
 	public static final String TAG = "GCMRelated";
 	public static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 	
+	//ExpandListAdapter
+	public static final boolean filterOff = false;
+	public static final boolean filterOn = true;
 
 }

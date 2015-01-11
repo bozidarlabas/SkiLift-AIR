@@ -39,6 +39,7 @@ import hr.foi.evolaris.skilift.expandListView.ExpandListGroup;
 import hr.foi.evolaris.skilift.interfaces.OnChangeSmartWatchLayout;
 import hr.foi.evolaris.skilift.model.Lift;
 import hr.foi.evolaris.skilift.model.LiftDetail;
+import hr.foi.evolaris.skilift.utils.Constants;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -83,41 +84,36 @@ public class ListControlExtension extends ManagedControlExtension implements
 				"ListControl constructor");
 		Log.d("tete", "tete");
 		
-		
+	}
+
+	public static void setList(){
+		Log.d("dodan", "je");
 		if(!starting){
 			for(int i = 0; i < 10; i++){
 				ArrayList<LiftDetail> list2 = new ArrayList<LiftDetail>();
 				Lift gru1 = new Lift();
 				gru1.setName("lift"+i);
+				gru1.setShowLift(Constants.filterOff);
 				
-				LiftDetail liftDetail = new LiftDetail();
-				liftDetail.setName(""+i);
-				liftDetail.setTag("" + i);
-				list2.add(liftDetail);
-				Log.d("kokoa", list2.get(0).getName());
-				LiftDetail liftDetail2 = new LiftDetail();
-				liftDetail2.setName("" + i);
-				liftDetail2.setTag("" + i);
-				list2.add(liftDetail2);
+				list2.add(addDetailAboutLift(i));
+				list2.add(addDetailAboutLift(i));
 				
 				gru1.setItems(list2);
-				
-				
 				lifts.add(gru1);
 			}
 			starting = true;
 		}
-		
-		
 	}
 	
-
+	private static LiftDetail addDetailAboutLift(int position){
+		LiftDetail liftDetail = new LiftDetail();
+		liftDetail.setName(""+position);
+		liftDetail.setTag("" + position);
+		return liftDetail;
+	}
+	
 	@Override
 	public void onResume() {
-		
-
-		
-		
 		Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onResume");
 		showLayout(R.layout.layout_test_list, null);
 		sendListCount(R.id.listView, lifts.size());

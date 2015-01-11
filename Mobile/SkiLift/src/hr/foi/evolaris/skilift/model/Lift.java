@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class Lift {
 
 	private String name;
+	private boolean showLift;
 	private ArrayList<LiftDetail> Items;
 
 	
@@ -24,6 +25,14 @@ public class Lift {
 	}
 	public void setItems(ArrayList<LiftDetail> Items) {
 		this.Items = Items;
+	}
+	
+	public boolean getShowLift() {
+		return this.showLift;
+	}
+	
+	public void setShowLift(boolean showLift) {
+		this.showLift = showLift;
 	}
 	
 	
