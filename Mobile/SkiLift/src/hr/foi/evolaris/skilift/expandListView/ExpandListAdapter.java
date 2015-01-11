@@ -1,5 +1,8 @@
 package hr.foi.evolaris.skilift.expandListView;
 
+import hr.foi.evolaris.skilift.model.Lift;
+import hr.foi.evolaris.skilift.model.LiftDetail;
+
 import java.util.ArrayList;
 
 import android.content.Context;
@@ -19,26 +22,26 @@ import com.example.sonymobile.smartextension.hellonotification.R;
 public class ExpandListAdapter extends BaseExpandableListAdapter {
 
 	private Context context;
-	private ArrayList<ExpandListGroup> groups;
+	private ArrayList<Lift> groups;
 
-	public ExpandListAdapter(Context context, ArrayList<ExpandListGroup> groups) {
+	public ExpandListAdapter(Context context, ArrayList<Lift> groups) {
 		this.context = context;
 		this.groups = groups;
 	}
 
-	public void addItem(ExpandListChild item, ExpandListGroup group) {
+	public void addItem(LiftDetail item, Lift group) {
 		if (!groups.contains(group)) {
 			groups.add(group);
 		}
 		int index = groups.indexOf(group);
-		ArrayList<ExpandListChild> ch = groups.get(index).getItems();
+		ArrayList<LiftDetail> ch = groups.get(index).getItems();
 		ch.add(item);
 		groups.get(index).setItems(ch);
 	}
 
 	public Object getChild(int groupPosition, int childPosition) {
 		// TODO Auto-generated method stub
-		ArrayList<ExpandListChild> chList = groups.get(groupPosition)
+		ArrayList<LiftDetail> chList = groups.get(groupPosition)
 				.getItems();
 		return chList.get(childPosition);
 	}
@@ -50,7 +53,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
 	public View getChildView(int groupPosition, int childPosition,
 			boolean isLastChild, View view, ViewGroup parent) {
-		ExpandListChild child = (ExpandListChild) getChild(groupPosition,
+		LiftDetail child = (LiftDetail) getChild(groupPosition,
 				childPosition);
 		if (view == null) {
 			LayoutInflater infalInflater = (LayoutInflater) context
@@ -66,7 +69,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
 	public int getChildrenCount(int groupPosition) {
 		// TODO Auto-generated method stub
-		ArrayList<ExpandListChild> chList = groups.get(groupPosition)
+		ArrayList<LiftDetail> chList = groups.get(groupPosition)
 				.getItems();
 
 		return chList.size();
@@ -90,7 +93,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
 	public View getGroupView(int groupPosition, boolean isLastChild, View view,
 			ViewGroup parent) {
-		ExpandListGroup group = (ExpandListGroup) getGroup(groupPosition);
+		Lift group = (Lift) getGroup(groupPosition);
 		if (view == null) {
 			LayoutInflater inf = (LayoutInflater) context
 					.getSystemService(context.LAYOUT_INFLATER_SERVICE);
@@ -124,9 +127,9 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 
 	private final class CheckUpdateListener implements
 			OnCheckedChangeListener {
-		private final ExpandListGroup parent;
+		private final Lift parent;
 
-		private CheckUpdateListener(ExpandListGroup group) {
+		private CheckUpdateListener(Lift group) {
 			this.parent = group;
 			//this.parent = parent;
 		}

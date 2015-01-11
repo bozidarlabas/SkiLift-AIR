@@ -128,7 +128,7 @@ public class GalleryTestControl extends ManagedControlExtension {
         // Header data
         Bundle headerBundle = new Bundle();
         headerBundle.putInt(Control.Intents.EXTRA_LAYOUT_REFERENCE, R.id.title);
-        headerBundle.putString(Control.Intents.EXTRA_TEXT, ListControlExtension.lifts.get(position).getCapacity());
+        headerBundle.putString(Control.Intents.EXTRA_TEXT, ListControlExtension.lifts.get(position).getItems().get(0).getName()); //capacity
 
         // Body data
         Bundle bodyBundle = new Bundle();

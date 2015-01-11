@@ -1,11 +1,15 @@
 package hr.foi.evolaris.skilift.model;
 
+import hr.foi.evolaris.skilift.expandListView.ExpandListChild;
+
+import java.util.ArrayList;
+
 
 public class Lift {
 
 	private String name;
-	private String capacity;
-	private boolean filter;
+	private ArrayList<LiftDetail> Items;
+
 	
 	public String getName() {
 		return this.name;
@@ -15,21 +19,14 @@ public class Lift {
 		this.name = name;
 	}
 	
-	public String getCapacity(){
-		return this.capacity;
+	public ArrayList<LiftDetail> getItems() {
+		return Items;
+	}
+	public void setItems(ArrayList<LiftDetail> Items) {
+		this.Items = Items;
 	}
 	
-	public void setCapacity(String capacity){
-		this.capacity = capacity;
-	}
 	
-	public Boolean getFilter(){
-		return this.filter;
-	}
-	
-	public void setFilter(Boolean filter){
-		this.filter = filter;
-	}
 	
 	
 	

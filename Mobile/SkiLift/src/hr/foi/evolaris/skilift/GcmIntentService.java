@@ -1,7 +1,9 @@
 package hr.foi.evolaris.skilift;
 
+import hr.foi.evolaris.skilift.model.LiftDetail;
 import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -89,14 +91,31 @@ public class GcmIntentService extends IntentService {
 		String liftName = new String();
 		int i = 0;
 		Iterator it = mapa.entrySet().iterator();
+		
 		while (it.hasNext()) {
+			ArrayList<LiftDetail> list2 = new ArrayList<LiftDetail>();
 			HashMap.Entry pairs = (HashMap.Entry) it.next();
 			
 			data = pairs.getValue().toString();
-			ListControlExtension.lifts.get(i).setCapacity(data);
+			Log.d("poz", ""+data);
+			
 			//liftsnumber = name
 			liftName = pairs.getKey().toString();
 			ListControlExtension.lifts.get(i).setName(liftName);
+			
+			LiftDetail liftDetail = new LiftDetail();
+			liftDetail.setName(data);
+			liftDetail.setTag("" + i);
+			list2.add(liftDetail);
+			
+			LiftDetail liftDetail2 = new LiftDetail();
+			liftDetail2.setName(""+i);
+			liftDetail2.setTag("" + i);
+			list2.add(liftDetail2);
+			
+			ListControlExtension.lifts.get(i).setItems(list2);//set capacity
+			Log.d("poz2", ""+ListControlExtension.lifts.get(i).getItems().get(0).getName());
+			
 			i++;
 			it.remove(); // avoids a ConcurrentModificationException
 		}

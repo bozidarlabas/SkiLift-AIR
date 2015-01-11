@@ -34,8 +34,11 @@ package hr.foi.evolaris.skilift.swcontrols;
 
 import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
 import hr.foi.evolaris.skilift.SmartwatchUserInterface;
+import hr.foi.evolaris.skilift.expandListView.ExpandListChild;
+import hr.foi.evolaris.skilift.expandListView.ExpandListGroup;
 import hr.foi.evolaris.skilift.interfaces.OnChangeSmartWatchLayout;
 import hr.foi.evolaris.skilift.model.Lift;
+import hr.foi.evolaris.skilift.model.LiftDetail;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -80,13 +83,27 @@ public class ListControlExtension extends ManagedControlExtension implements
 				"ListControl constructor");
 		Log.d("tete", "tete");
 		
+		
 		if(!starting){
 			for(int i = 0; i < 10; i++){
-				Lift lift = new Lift();
-				lift.setName("Lift " + (i+1));
-				lift.setFilter(true);
-				lift.setCapacity("" + i);
-				lifts.add(i, lift);
+				ArrayList<LiftDetail> list2 = new ArrayList<LiftDetail>();
+				Lift gru1 = new Lift();
+				gru1.setName("lift"+i);
+				
+				LiftDetail liftDetail = new LiftDetail();
+				liftDetail.setName(""+i);
+				liftDetail.setTag("" + i);
+				list2.add(liftDetail);
+				Log.d("kokoa", list2.get(0).getName());
+				LiftDetail liftDetail2 = new LiftDetail();
+				liftDetail2.setName("" + i);
+				liftDetail2.setTag("" + i);
+				list2.add(liftDetail2);
+				
+				gru1.setItems(list2);
+				
+				
+				lifts.add(gru1);
 			}
 			starting = true;
 		}
@@ -176,7 +193,8 @@ public class ListControlExtension extends ManagedControlExtension implements
 	protected ControlListItem createControlListItem(int position) {
 
 		ControlListItem item = new ControlListItem();
-		String capacity = lifts.get(position).getCapacity();
+		String capacity = lifts.get(position).getItems().get(0).getName(); //capacity
+		
 		int numberIndicator = Integer.parseInt(capacity);
 
 		item.dataXmlLayout = changeSmartWatchLayout(numberIndicator, item);
@@ -262,7 +280,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 			
 			Bundle availabilityBundle = new Bundle();
 			availabilityBundle.putInt(Control.Intents.EXTRA_LAYOUT_REFERENCE, R.id.tvavailability);
-			availabilityBundle.putString(Control.Intents.EXTRA_TEXT, "Availability: " + lifts.get(position).getCapacity() + "%");
+			availabilityBundle.putString(Control.Intents.EXTRA_TEXT, "Capacity: " + lifts.get(position).getItems().get(0).getName() + "%");  //capacity
 
 			item.layoutData[1] = availabilityBundle;
 			return item.layoutData;

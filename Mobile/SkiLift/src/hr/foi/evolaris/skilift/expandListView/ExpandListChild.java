@@ -2,19 +2,19 @@ package hr.foi.evolaris.skilift.expandListView;
 
 public class ExpandListChild {
 
-	private String Name;
-	private String Tag;
+	private String capacity;
+	private String distance;
 	
 	public String getName() {
-		return Name;
+		return capacity;
 	}
-	public void setName(String Name) {
-		this.Name = Name;
+	public void setName(String capacity) {
+		this.capacity = capacity;
 	}
 	public String getTag() {
-		return Tag;
+		return distance;
 	}
 	public void setTag(String Tag) {
-		this.Tag = Tag;
+		this.distance = distance;
 	}
 }
