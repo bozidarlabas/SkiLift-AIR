@@ -8,21 +8,20 @@
     android:background="@drawable/bar_bg"
     android:paddingTop="0dip"
     android:stretchColumns="1" 
-    android:id="@+id/childMaster">
+    android:id="@+id/childMaster"
+    >
 
-    <TableRow>
+    <TableRow
+        android:background="@android:color/transparent">
 
         <TextView
             android:id="@+id/tvCircle"
             android:layout_width="50dip"
             android:layout_height="50dip"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
             android:layout_margin="10dip"
-            android:background="@drawable/textview_circle_design_green"
+            android:background="@drawable/logo_item"
             android:clickable="true"
             android:gravity="center"
-            android:text="+"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
 
@@ -33,11 +32,6 @@
             android:paddingTop="0dip"
             android:stretchColumns="1" >
 
-            <TableRow
-                android:id="@+id/tableRow1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal" >
 
                 <TextView
                     android:id="@+id/tvGroup"
@@ -45,18 +39,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="10dip"
-                    android:text="lift 1"
                     android:textColor="#000000"
-                    android:textSize="30dip" />
-            </TableRow>
+                    android:textSize="30sp" />
         </TableLayout>
 
         <CheckBox
             android:id="@+id/checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="5px"
             android:focusable="false"
             android:freezesText="false" />
     </TableRow>

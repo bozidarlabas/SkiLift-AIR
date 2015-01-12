@@ -1,7 +1,5 @@
 package hr.foi.evolaris.skilift.model;
 
-import hr.foi.evolaris.skilift.expandListView.ExpandListChild;
-
 import java.util.ArrayList;
 
 

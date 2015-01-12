@@ -32,7 +32,7 @@ Copyright (c) 2011-2013, Sony Mobile Communications AB
 
 package hr.foi.evolaris.skilift.swcontrols;
 
-import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
+import hr.foi.evolaris.skilift.smartwatch.SMartWatchExtensionService;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -96,7 +96,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
 
     @Override
     public void onRequestListItem(int layoutReference, int listItemPosition) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onRequestListItem");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onRequestListItem");
         if (mCurrentControl != null) {
             mCurrentControl.onRequestListItem(layoutReference, listItemPosition);
         }
@@ -104,7 +104,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
 
     @Override
     public void onListItemClick(ControlListItem listItem, int clickType, int itemLayoutReference) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onListItemClick");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onListItemClick");
         if (mCurrentControl != null) {
             mCurrentControl.onListItemClick(listItem, clickType, itemLayoutReference);
         }
@@ -112,7 +112,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
 
     @Override
     public void onListItemSelected(ControlListItem listItem) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onListItemSelected");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onListItemSelected");
         if (mCurrentControl != null) {
             mCurrentControl.onListItemSelected(listItem);
         }
@@ -120,7 +120,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
 
     @Override
     public void onListRefreshRequest(int layoutReference) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onListRefreshRequest");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onListRefreshRequest");
         if (mCurrentControl != null) {
             mCurrentControl.onListRefreshRequest(layoutReference);
         }
@@ -128,7 +128,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
 
     @Override
     public void onObjectClick(ControlObjectClickEvent event) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onObjectClick");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onObjectClick");
         if (mCurrentControl != null) {
             mCurrentControl.onObjectClick(event);
         }
@@ -136,11 +136,11 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
 
     @Override
     public void onKey(int action, int keyCode, long timeStamp) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onKey");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onKey");
 
         if (action == Control.Intents.KEY_ACTION_RELEASE
                 && keyCode == Control.KeyCodes.KEYCODE_BACK) {
-            Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onKey() - back button intercepted.");
+            Log.d(SMartWatchExtensionService.LOG_TAG, "onKey() - back button intercepted.");
             onBack();
         } else if (mCurrentControl != null) {
             super.onKey(action, keyCode, timeStamp);
@@ -149,7 +149,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
 
     @Override
     public void onMenuItemSelected(int menuItem) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onMenuItemSelected");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onMenuItemSelected");
         if (mCurrentControl != null) {
             mCurrentControl.onMenuItemSelected(menuItem);
         }
@@ -160,7 +160,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
      * back stack it is opened, otherwise extension is closed.
      */
     public void onBack() {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onBack");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onBack");
         if (!mControlStack.isEmpty()) {
             Intent backControl = mControlStack.pop();
             ControlExtension newControl = createControl(backControl);
@@ -193,13 +193,13 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
                     false);
             if (isNoHistory) {
                 // Not adding this control to history
-                Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "Not adding control to history stack");
+                Log.d(SMartWatchExtensionService.LOG_TAG, "Not adding control to history stack");
             } else {
-                Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "Adding control to history stack");
+                Log.d(SMartWatchExtensionService.LOG_TAG, "Adding control to history stack");
                 mControlStack.add(intent);
             }
         } else {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG,
+            Log.w(SMartWatchExtensionService.LOG_TAG,
                     "ControlManageronly supports ManagedControlExtensions");
         }
     }
@@ -208,7 +208,7 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
         ComponentName component = intent.getComponent();
         try {
             String className = component.getClassName();
-            Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "Class name:" + className);
+            Log.d(SMartWatchExtensionService.LOG_TAG, "Class name:" + className);
             Class<?> clazz = Class.forName(className);
             Constructor<?> ctor = clazz.getConstructor(Context.class, String.class,
                     ControlManagerSmartWatch2.class, Intent.class);
@@ -221,24 +221,24 @@ public class ControlManagerSmartWatch2 extends ControlManagerBase {
             if (object instanceof ManagedControlExtension) {
                 return (ManagedControlExtension) object;
             } else {
-                Log.w(AdvancedLayoutsExtensionService.LOG_TAG,
+                Log.w(SMartWatchExtensionService.LOG_TAG,
                         "Created object not a ManagedControlException");
             }
 
         } catch (SecurityException e) {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
+            Log.w(SMartWatchExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
         } catch (NoSuchMethodException e) {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
+            Log.w(SMartWatchExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
         } catch (IllegalArgumentException e) {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
+            Log.w(SMartWatchExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
         } catch (InstantiationException e) {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
+            Log.w(SMartWatchExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
         } catch (IllegalAccessException e) {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
+            Log.w(SMartWatchExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
         } catch (InvocationTargetException e) {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
+            Log.w(SMartWatchExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
         } catch (ClassNotFoundException e) {
-            Log.w(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
+            Log.w(SMartWatchExtensionService.LOG_TAG, "ControlManager: Failed in creating control", e);
         }
         return null;
     }

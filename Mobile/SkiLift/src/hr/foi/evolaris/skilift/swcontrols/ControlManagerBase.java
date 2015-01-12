@@ -32,7 +32,7 @@ Copyright (c) 2011-2013, Sony Mobile Communications AB
 
 package hr.foi.evolaris.skilift.swcontrols;
 
-import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
+import hr.foi.evolaris.skilift.smartwatch.SMartWatchExtensionService;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -65,13 +65,13 @@ public class ControlManagerBase extends ControlExtension {
      */
     public ControlManagerBase(final Context context, final String packageName) {
         super(context, packageName);
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "created");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "created");
         Log.d("AJMO1", "jedan");
     }
 
     @Override
     public void onDestroy() {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager onDestroy");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "ControlManager onDestroy");
         if (mCurrentControl != null) {
             mCurrentControl.onDestroy();
         }
@@ -79,7 +79,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onStart() {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onStart");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onStart");
         mControlState = STATE_STARTED;
         if (mCurrentControl != null) {
             mCurrentControl.onStart();
@@ -88,7 +88,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onStop() {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onStop");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onStop");
         mControlState = STATE_IDLE;
         if (mCurrentControl != null) {
             mCurrentControl.onStop();
@@ -97,7 +97,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onPause() {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onPause");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onPause");
         mControlState = STATE_STARTED;
         if (mCurrentControl != null) {
             mCurrentControl.onPause();
@@ -106,7 +106,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onResume() {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onResume");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onResume");
         mControlState = STATE_FOREGROUND;
         if (mCurrentControl != null) {
             mCurrentControl.onResume();
@@ -115,7 +115,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onTouch(final ControlTouchEvent event) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onTouch");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onTouch");
         if (mCurrentControl != null) {
             mCurrentControl.onTouch(event);
         }
@@ -123,7 +123,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onDoAction(int requestCode, Bundle bundle) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onDoAction");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onDoAction");
         if (mCurrentControl != null) {
             mCurrentControl.onDoAction(requestCode, bundle);
         }
@@ -131,7 +131,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onError(int code) {
-        Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onError");
+        Log.d(SMartWatchExtensionService.LOG_TAG, "onError");
         if (mCurrentControl != null) {
             mCurrentControl.onError(code);
         }
@@ -139,7 +139,7 @@ public class ControlManagerBase extends ControlExtension {
 
     @Override
     public void onKey(int action, int keyCode, long timeStamp) {
-        Log.v(AdvancedLayoutsExtensionService.LOG_TAG, "onKey");
+        Log.v(SMartWatchExtensionService.LOG_TAG, "onKey");
         if (mCurrentControl != null) {
             mCurrentControl.onKey(action, keyCode, timeStamp);
         }
@@ -152,7 +152,7 @@ public class ControlManagerBase extends ControlExtension {
      */
     protected void startControl(final ControlExtension newControl) {
 
-        Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "ControlManager startControl");
+        Log.d(SMartWatchExtensionService.LOG_TAG, "ControlManager startControl");
         if (newControl != null) {
             // Stop the current control
             int savedState = mControlState;

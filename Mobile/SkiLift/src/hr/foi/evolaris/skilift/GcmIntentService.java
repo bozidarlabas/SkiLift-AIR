@@ -1,7 +1,7 @@
 package hr.foi.evolaris.skilift;
 
 import hr.foi.evolaris.skilift.expandListView.ExpandListAdapter;
-import hr.foi.evolaris.skilift.expandListView.test;
+import hr.foi.evolaris.skilift.expandListView.ExpandableListActivity;
 import hr.foi.evolaris.skilift.model.Lift;
 import hr.foi.evolaris.skilift.model.LiftDetail;
 import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
@@ -138,7 +138,7 @@ public class GcmIntentService extends IntentService {
 		// Detail List(Display capacity of clicked lift)
 		// GalleryTestControl.liftsNumber = data;
 		// GalleryTestControl.liftsName = liftsNumber;
-		AdvancedLayoutsExtensionService.sm.resume();
+		SMartWatchExtensionService.sm.resume();
 
 	}
 

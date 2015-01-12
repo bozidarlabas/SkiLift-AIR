@@ -2,52 +2,24 @@
 <!-- No translation of sample extensions -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <string name="app_name">Sky Lift</string>
-    <!-- Title of preference activity -->
-    <string name="preference_activity_title">Hello Notification settings</string>
-    <!-- Configuration text shown in preferences -->
-    <string name="configuration_text">Hello Notification settings</string>
-    <!-- Extension name, shown in preferences -->
-    <string name="extension_name">Hello Notification</string>
-    <!-- Name of source, shown in preferences -->
-    <string name="source_name">Notification source</string>
-    <!-- Action Toasts, shown on accessory -->
-    <string name="action_event_1">Action Toast 1</string>
-    <string name="action_event_2">Action Toast 2</string>
-    <string name="action_event_3">Action Toast 3</string>
 
-    <!-- Text that is read before the display name on accessories that supports text to speech -->
-    <string name="text_to_speech">New notification event from</string>
-    <string name="preference_option_read_me">READ ME</string>
-    <string name="preference_key_read_me">preference_key_read_me</string>
-    <string name="preference_option_read_me_txt">Tap Send notification to send a new notification to the accessory\n\nTap Clear all notifications to remove all notifications.</string>
-    <string name="preference_option_clear">Clear all notifications</string>
-    <string name="preference_option_register">Register</string>
-    <string name="preference_option_clear_txt">"All notifications on the accessory will be cleared, continue?"</string>
-    <string name="preference_key_clear">preference_key_clear</string>
-    <string name="preference_key_register">preference_key_register</string>
-    <string name="clear_success">All notifications have been cleared</string>
-    <string name="clear_failure">Failed to clear notifications</string>
-    <string name="preference_option_send">Send notifications</string>
-    <string name="preference_key_send">preference_key_send</string>
-    <string name="button_send_notification">Send notification</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="prijava">Prijava</string>
-    <string name="registracija">Registracija</string>
-    <string name="korIme">Korisničko ime</string>
-    <string name="lozinka">Lozinka</string>
-    <string name="ime">Ime</string>
-    <string name="prezime">Prezime</string>
-    <string name="email">Email</string>
-    <string name="potvrdaLozinke">Potvrda lozinke</string>
+     <string name="activityLabel">MyApp</string>
     <string name="firstOption">SmartWatch UI</string>
     <string name="btnInfo">Information</string>
     <string name="btnFilter">Filter Lifts</string>
-    <string name="title_activity_fragment">FragmentA</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-     <string name="btnUIName">Color List</string>
-     <string name="btnBack">Back</string>
-     <string name="btnSelect">Select</string>
+    <string name="btnUIName">Color List</string>
+    <string name="btnBack">Back</string>
+    <string name="btnSelect">Select</string>
+    <string name="open_menu">Open Menu</string>
+    <string name="sortMaxMin">Max-Min</string>
+    <string name="main_menu">Sort</string>
+    <string name="sortMinMax">Min-Max</string>
+    <string name="expandable">Distance</string>
+    <string name="expandable2">Capacity</string>
+    <string name="close">Close</string>
+    <string name="btnSort">Sorting</string>
+    <string name="btnSettings">Settings</string>
+     <string name="configuration_text">Hello Notification settings</string>
+    <string name="extension_name">Hello Notification</string>
 
 </resources>

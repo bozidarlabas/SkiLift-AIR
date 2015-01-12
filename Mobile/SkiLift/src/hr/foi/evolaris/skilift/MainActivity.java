@@ -1,6 +1,8 @@
 package hr.foi.evolaris.skilift;
 
-import hr.foi.evolaris.skilift.expandListView.test;
+import hr.foi.evolaris.skilift.expandListView.ExpandableListActivity;
+import hr.foi.evolaris.skilift.gcm.RegisterAppGcm;
+import hr.foi.evolaris.skilift.smartwatch.SmartwatchUserInterface;
 import hr.foi.evolaris.skilift.utils.Constants;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -48,7 +50,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void filterData(View v) {
-		Intent intent = new Intent(this, test.class);
+		Intent intent = new Intent(this, ExpandableListActivity.class);
 		startActivity(intent);
 	}
 
@@ -78,7 +80,7 @@ public class MainActivity extends Activity {
 
 			if (regid.isEmpty()) {
 				// button.setEnabled(false);
-				new RegisterApp(getApplicationContext(), gcm,
+				new RegisterAppGcm(getApplicationContext(), gcm,
 						getAppVersion(getApplicationContext())).execute();
 			} else {
 				Toast.makeText(getApplicationContext(),

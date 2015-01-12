@@ -14,7 +14,7 @@ public class LiftDetail {
 	public String getTag() {
 		return tag;
 	}
-	public void setTag(String Tag) {
+	public void setTag(String tag) {
 		this.tag = tag;
 	}
 }

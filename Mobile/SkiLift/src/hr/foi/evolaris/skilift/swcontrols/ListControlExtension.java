@@ -32,16 +32,13 @@ Copyright (c) 2011-2013, Sony Mobile Communications AB
 
 package hr.foi.evolaris.skilift.swcontrols;
 
-import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
-import hr.foi.evolaris.skilift.SmartwatchUserInterface;
-import hr.foi.evolaris.skilift.expandListView.ExpandListChild;
-import hr.foi.evolaris.skilift.expandListView.ExpandListGroup;
 import hr.foi.evolaris.skilift.interfaces.OnChangeSmartWatchLayout;
 import hr.foi.evolaris.skilift.model.Lift;
 import hr.foi.evolaris.skilift.model.LiftDetail;
+import hr.foi.evolaris.skilift.smartwatch.SMartWatchExtensionService;
+import hr.foi.evolaris.skilift.smartwatch.SmartwatchUserInterface;
 import hr.foi.evolaris.skilift.utils.Constants;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import android.content.Context;
@@ -81,7 +78,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 	public ListControlExtension(Context context, String hostAppPackageName,
 			ControlManagerSmartWatch2 controlManager, Intent intent) {
 		super(context, hostAppPackageName, controlManager, intent);
-		Log.d(AdvancedLayoutsExtensionService.LOG_TAG,
+		Log.d(SMartWatchExtensionService.LOG_TAG,
 				"ListControl constructor");
 		Log.d("tete", "tete");
 		
@@ -116,7 +113,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 	
 	@Override
 	public void onResume() {
-		Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onResume");
+		Log.d(SMartWatchExtensionService.LOG_TAG, "onResume");
 		showLayout(R.layout.layout_test_list, null);
 		sendListCount(R.id.listView, lifts.size());
 
@@ -138,7 +135,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 	@Override
 	public void onRequestListItem(final int layoutReference,
 			final int listItemPosition) {
-		Log.d(AdvancedLayoutsExtensionService.LOG_TAG,
+		Log.d(SMartWatchExtensionService.LOG_TAG,
 				"onRequestListItem() - position " + listItemPosition);
 		if (layoutReference != -1 && listItemPosition != -1
 				&& layoutReference == R.id.listView) {
@@ -160,7 +157,7 @@ public class ListControlExtension extends ManagedControlExtension implements
 	@Override
 	public void onListItemClick(final ControlListItem listItem,
 			final int clickType, final int itemLayoutReference) {
-		Log.d(AdvancedLayoutsExtensionService.LOG_TAG,
+		Log.d(SMartWatchExtensionService.LOG_TAG,
 				"Item clicked. Position "
 						+ listItem.listItemPosition
 						+ ", itemLayoutReference "

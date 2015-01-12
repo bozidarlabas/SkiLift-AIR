@@ -5,7 +5,7 @@
     android:versionName="1.1.1" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="com.sonyericsson.extras.liveware.aef.EXTENSION_PERMISSION" />
@@ -24,7 +24,7 @@
         android:theme="@style/ExtensionLightTheme" >
         <activity
             android:name="hr.foi.evolaris.skilift.MainActivity"
-            android:label="@string/preference_activity_title" 
+            android:label="@string/activityLabel" 
             android:exported="true">
             
             <intent-filter>
@@ -34,24 +34,26 @@
         </activity>
         
         <activity 
-           android:name="hr.foi.evolaris.skilift.SmartwatchUserInterface">
+           android:name="hr.foi.evolaris.skilift.smartwatch.SmartwatchUserInterface">
        </activity>
        
         <activity 
            android:name="hr.foi.evolaris.skilift.expandListView.ExpandListActivity">
        </activity>
         <activity 
-           android:name="hr.foi.evolaris.skilift.expandListView.test">
+           android:name="hr.foi.evolaris.skilift.expandListView.ExpandableListActivity">
        </activity>
+       
+        <activity android:name="hr.foi.evolaris.skilift..AltRadialMenuActivity" />
 
-        <service android:name="hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService" />
+        <service android:name="hr.foi.evolaris.skilift.smartwatch.SMartWatchExtensionService" />
         <service android:name="com.sonyericsson.extras.liveware.extension.util.TunnelService" >
             <intent-filter>
                 <action android:name="com.sonyericsson.extras.liveware.aef.tunnel.action.BIND" />
             </intent-filter>
         </service>
 
-        <receiver android:name="hr.foi.evolaris.skilift.HelloNotificationExtensionReceiver" >
+        <receiver  android:name="hr.foi.evolaris.skilift.smartwatch.SmartWatchExtensionReceiverionReceiver" >
             <intent-filter>
 
                 <!-- Generic extension intents. -->
@@ -93,7 +95,7 @@
             android:value="@integer/google_play_services_version" />
 
         <receiver
-            android:name="hr.foi.evolaris.skilift.GcmBroadcastReceiver"
+            android:name="hr.foi.evolaris.skilift.gcm.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
@@ -102,7 +104,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="hr.foi.evolaris.skilift.GcmIntentService" />
+        <service android:name="hr.foi.evolaris.skilift.gcm.GcmIntentService" />
 
     </application>
 

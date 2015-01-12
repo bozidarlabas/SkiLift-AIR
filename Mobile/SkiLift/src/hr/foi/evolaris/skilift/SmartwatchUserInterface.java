@@ -1,7 +1,5 @@
 package hr.foi.evolaris.skilift;
 
-import java.util.Currency;
-
 import hr.foi.evolaris.skilift.fragments.FragmentA;
 import hr.foi.evolaris.skilift.fragments.FragmentB;
 import hr.foi.evolaris.skilift.interfaces.OnSetSmartWatchUI;
@@ -138,7 +136,7 @@ public class SmartwatchUserInterface extends FragmentActivity implements TabList
 	@Override
 	public void setUserInterface() {
 		selectedSmartWatchUIIndex = selectedFragmentIndex;
-		AdvancedLayoutsExtensionService.sm.resume();
+		SMartWatchExtensionService.sm.resume();
 	}
 
 

@@ -46,7 +46,7 @@ public class HelloNotificationExtensionReceiver extends BroadcastReceiver {
         //intent.setClass(context, HelloNotificationExtensionService.class);
        // context.startService(intent);
     	
-    	intent.setClass(context, AdvancedLayoutsExtensionService.class);
+    	intent.setClass(context, SMartWatchExtensionService.class);
         context.startService(intent);
     }
 }

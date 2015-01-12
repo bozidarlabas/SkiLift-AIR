@@ -1,12 +1,11 @@
 package hr.foi.evolaris.skilift.expandListView;
 
-import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
 import hr.foi.evolaris.skilift.model.Lift;
 import hr.foi.evolaris.skilift.model.LiftDetail;
+import hr.foi.evolaris.skilift.smartwatch.SMartWatchExtensionService;
 import hr.foi.evolaris.skilift.swcontrols.ListControlExtension;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -42,29 +41,21 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 		this.groups = groups;
 	}
 
-	// This Function used to inflate parent rows view
 
 	@Override
 	public View getGroupView(int groupPosition, boolean isExpanded,
 			View convertView, ViewGroup parentView) {
 		final Lift group = groups.get(groupPosition);
 
-		// Inflate grouprow.xml file for parent rows
 		convertView = inflater
 				.inflate(R.layout.grouprow, parentView, false);
 
-		// Get grouprow.xml file elements and set values
 		((TextView) convertView.findViewById(R.id.tvGroup)).setText(group.getName());
 		
-
-
-		// Get grouprow.xml file checkbox elements
 		CheckBox checkbox = (CheckBox) convertView
 				.findViewById(R.id.checkbox);
 		checkbox.setChecked(load(group.getName()));
 
-		// Set CheckUpdateListener for CheckBox (see below
-		// CheckUpdateListener class)
 		checkbox.setOnCheckedChangeListener(new CheckUpdateListener(group));
 
 		return convertView;
@@ -192,11 +183,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 			
 			
 			
-			AdvancedLayoutsExtensionService.sm.resume();
-			//test.ExpAdapter.notifyDataSetChanged();
-			//AdvancedLayoutsExtensionService.sm.resume();
-			
-
+			SMartWatchExtensionService.sm.resume();
 		}
 		
 		
@@ -217,8 +204,6 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
 			}
 			ListControlExtension.lifts.clear();
 			ListControlExtension.lifts = new ArrayList<Lift>(liftCopy);
-			//ListControlExtension.lifts.addAll(liftCopy);
-			//ListControlExtension.lifts = liftCopy;
 		}
 	}
 	/***********************************************************************/

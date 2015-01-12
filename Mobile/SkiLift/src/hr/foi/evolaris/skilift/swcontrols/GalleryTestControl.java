@@ -32,7 +32,7 @@ Copyright (c) 2011-2013, Sony Mobile Communications AB
 
 package hr.foi.evolaris.skilift.swcontrols;
 
-import hr.foi.evolaris.skilift.AdvancedLayoutsExtensionService;
+import hr.foi.evolaris.skilift.smartwatch.SMartWatchExtensionService;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -73,7 +73,7 @@ public class GalleryTestControl extends ManagedControlExtension {
 
     @Override
     public void onResume() {
-        Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onResume");
+        Log.d(SMartWatchExtensionService.LOG_TAG, "onResume");
         showLayout(R.layout.layout_test_gallery, null);
         sendListCount(R.id.gallery, ListControlExtension.lifts.size());
 
@@ -92,7 +92,7 @@ public class GalleryTestControl extends ManagedControlExtension {
 
     @Override
     public void onRequestListItem(final int layoutReference, final int listItemPosition) {
-        Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "onRequestListItem() - position " + listItemPosition);
+        Log.d(SMartWatchExtensionService.LOG_TAG, "onRequestListItem() - position " + listItemPosition);
         if (layoutReference != -1 && listItemPosition != -1 && layoutReference == R.id.gallery) {
             ControlListItem item = createControlListItem(listItemPosition);
             if (item != null) {
@@ -112,7 +112,7 @@ public class GalleryTestControl extends ManagedControlExtension {
     @Override
     public void onListItemClick(final ControlListItem listItem, final int clickType,
             final int itemLayoutReference) {
-        Log.d(AdvancedLayoutsExtensionService.LOG_TAG, "Item clicked. Position " + listItem.listItemPosition
+        Log.d(SMartWatchExtensionService.LOG_TAG, "Item clicked. Position " + listItem.listItemPosition
                 + ", itemLayoutReference " + itemLayoutReference + ". Type was: "
                 + (clickType == Control.Intents.CLICK_TYPE_SHORT ? "SHORT" : "LONG"));
     }
