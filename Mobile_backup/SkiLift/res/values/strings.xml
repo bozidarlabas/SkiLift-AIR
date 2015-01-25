@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+
+     <string name="activityLabel">MyApp</string>
+    <string name="firstOption">SmartWatch UI</string>
+    <string name="btnInfo">Information</string>
+    <string name="btnFilter">Filter Lifts</string>
+    <string name="btnUIName">Color List</string>
+    <string name="btnBack">Back</string>
+    <string name="btnSelect">Select</string>
+    <string name="open_menu">Open Menu</string>
+    <string name="sortMaxMin">Max-Min</string>
+    <string name="main_menu">Sort</string>
+    <string name="sortMinMax">Min-Max</string>
+    <string name="expandable">Distance</string>
+    <string name="expandable2">Capacity</string>
+    <string name="close">Close</string>
+    <string name="btnSort">Sorting</string>
+    <string name="btnSettings">Settings</string>
+     <string name="configuration_text">Hello Notification settings</string>
+    <string name="extension_name">Hello Notification</string>
+
+</resources>
