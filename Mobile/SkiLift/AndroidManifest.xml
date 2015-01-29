@@ -19,9 +19,10 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name="hr.foi.air.evolaris.skilift.smartphone.MainActivity"
             android:exported="true"
@@ -30,11 +31,13 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        
         <activity android:name="hr.foi.air.evolaris.skilift.smartphone.TabManager" >
         </activity>
         <activity android:name="hr.foi.air.evolaris.skilift.smartphone.UserInterfaceView" >
         </activity>
-        <activity android:name="hr.foi.air.evolaris.skilift.smartphone.ExpandableListActivity"></activity>
+        <activity android:name="hr.foi.air.evolaris.skilift.smartphone.ExpandableListActivity" >
+        </activity>
 
         <receiver
             android:name="hr.foi.air.evolaris.skilift.gcm.GcmBroadcastReceiver"
@@ -43,6 +46,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
         </receiver>
+        
         <receiver android:name="hr.foi.air.evolaris.skilift.smartwatch.SmartWatchReceiver" >
             <intent-filter>
 
@@ -85,11 +89,13 @@
             android:value="@integer/google_play_services_version" />
 
         <service android:name="hr.foi.air.evolaris.skilift.gcm.GcmIntentService" />
+        
         <service android:name="com.sonyericsson.extras.liveware.extension.util.TunnelService" >
             <intent-filter>
                 <action android:name="com.sonyericsson.extras.liveware.aef.tunnel.action.BIND" />
             </intent-filter>
         </service>
+        
         <service android:name="hr.foi.air.evolaris.skilift.smartwatch.SmartWatchService" />
     </application>
 

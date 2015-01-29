@@ -16,10 +16,12 @@ public class UserInterfaceView extends SwipeTabManager implements OnTabCreate, O
 
 	LiftDataManager liftDataManager = LiftDataManager.getInstance();
 	UserInterfaceController userInterfaceController = UserInterfaceController.getInstance();
+	
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
 		setContentView(R.layout.user_interface_manager);
+		
 		createSwipe();
 		createTab();
 	}
@@ -27,7 +29,6 @@ public class UserInterfaceView extends SwipeTabManager implements OnTabCreate, O
 	
 	//OnClick Event
 	public void changeUserInterface(View v){
-		
 		Intent intent = null;
 	
 		switch(selectedUIIndex){
