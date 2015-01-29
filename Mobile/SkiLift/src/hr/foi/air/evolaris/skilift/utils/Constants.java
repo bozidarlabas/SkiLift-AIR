@@ -8,5 +8,8 @@ public class Constants {
 	public static final String TAG = "GCMRelated";
 	public static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 	public static final String SENDER_ID = "58356996976";
+	
+	//
+	public static final String LIFT_TAG = "Lift";
 
 }

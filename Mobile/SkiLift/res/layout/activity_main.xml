@@ -1,21 +1,53 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="hr.foi.air.evolaris.skilift.MainActivity" >
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button1"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="19dp"
-        android:text="Register"
-        android:onClick="registerToGCM" />
+        android:contentDescription="@string/imgDescription"
+        android:src="@drawable/logo" />
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnUI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:onClick="changeSmartwatchUI"
+            android:text="@string/btnUIChange"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mybutton"
+            android:onClick="filterData"
+            android:text="@string/btnFilter"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnInf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mybutton"
+            android:onClick="openInformation"
+            android:text="@string/btnInfo"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

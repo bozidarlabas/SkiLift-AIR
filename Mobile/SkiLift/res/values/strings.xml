@@ -4,5 +4,26 @@
     <string name="app_name">SkiLift</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="btnUIChange">SmartWatch UI</string>
+    <string name="btnInfo">Information</string>
+    <string name="btnFilter">Filter Lifts</string>
+    <string name="imgDescription">Ski Lift logo</string>
+    <string name="btnUIName">Color List</string>
+    <string name="btnBack">Back</string>
+    <string name="btnSelect">Select</string>
+    <string name="configuration_text">Hello Notification settings</string>
+    <string name="extension_name">Hello Notification</string>
+    <string name="btnSort">Sorting</string>
+    <string name="btnSettings">Settings</string>
+    
+    <string name="alertDialogTitle">Sorting</string>
+    <string name="alertDialogText">Sort the data on SmartWatch according to the Lift capacity</string>
+    <string name="alertDialogButtonOne">Ascending</string>
+    <string name="alertDialogButtonTwo">Descending</string>
+    
+     <string name="text_show_bitmap">Change to bitmap</string>
+     <string name="text_tap_to_update">Tap to update</string>
+     <string name="reset_layout">Reset layout</string>
+      <string name="text_show_layout">Change to layout</string>
 
 </resources>

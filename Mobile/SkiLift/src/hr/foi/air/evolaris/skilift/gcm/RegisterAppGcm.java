@@ -1,6 +1,6 @@
 package hr.foi.air.evolaris.skilift.gcm;
 
-import hr.foi.air.evolaris.skilift.MainActivity;
+import hr.foi.air.evolaris.skilift.smartphone.MainActivity;
 import hr.foi.air.evolaris.skilift.utils.Constants;
 
 import java.io.IOException;
@@ -45,7 +45,6 @@ public class RegisterAppGcm {
 			regid = getRegistrationId(ctx);
 			
 			if (regid.isEmpty()) {
-				Log.d("test01", "test01");
 				new RegisterAppGcmBackground().execute();
 			} else {
 				Toast.makeText(ctx,
@@ -158,7 +157,7 @@ public class RegisterAppGcm {
 			final SharedPreferences prefs = ctx.getSharedPreferences(
 					MainActivity.class.getSimpleName(), Context.MODE_PRIVATE);
 			SharedPreferences.Editor editor = prefs.edit();
-			editor.putString("registration_id", regid);
+			editor.putString(Constants.PROPERTY_REG_ID, regid);
 			editor.putInt("appVersion", appVersion);
 			editor.commit();
 

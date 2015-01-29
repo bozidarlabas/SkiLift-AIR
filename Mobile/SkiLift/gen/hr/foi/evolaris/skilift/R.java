@@ -21,7 +21,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSize=0x7f010000;
+        public static final int adSize=0x7f010007;
         /** 
     A comma-separated list of the supported ad sizes. The sizes must be one of
     BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
@@ -34,7 +34,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSizes=0x7f010001;
+        public static final int adSizes=0x7f010008;
         /**  The ad unit ID. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -43,7 +43,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adUnitId=0x7f010002;
+        public static final int adUnitId=0x7f010009;
         /**  Theme to be used for the Wallet selector 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -55,7 +55,7 @@ containing a value of this type.
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int appTheme=0x7f010011;
+        public static final int appTheme=0x7f010018;
         /**  Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -68,7 +68,7 @@ containing a value of this type.
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonAppearance=0x7f010018;
+        public static final int buyButtonAppearance=0x7f01001f;
         /**  Height of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific height, e.g.
              "48dp", or special values "match_parent" and "wrap_content". 
@@ -90,7 +90,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonHeight=0x7f010015;
+        public static final int buyButtonHeight=0x7f01001c;
         /**  Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -103,7 +103,7 @@ containing a value of this type.
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonText=0x7f010017;
+        public static final int buyButtonText=0x7f01001e;
         /**  Width of the buy button. This includes an 8dp padding (4dp on each side) used for
              pressed and focused states of the button. The value can be a specific width, e.g.
              "300dp", or special values "match_parent" and "wrap_content". 
@@ -125,7 +125,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
          */
-        public static final int buyButtonWidth=0x7f010016;
+        public static final int buyButtonWidth=0x7f01001d;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -133,7 +133,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraBearing=0x7f010004;
+        public static final int cameraBearing=0x7f01000b;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -141,7 +141,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLat=0x7f010005;
+        public static final int cameraTargetLat=0x7f01000c;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -149,7 +149,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLng=0x7f010006;
+        public static final int cameraTargetLng=0x7f01000d;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -157,7 +157,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTilt=0x7f010007;
+        public static final int cameraTilt=0x7f01000e;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -165,7 +165,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraZoom=0x7f010008;
+        public static final int cameraZoom=0x7f01000f;
         /**  Google Wallet environment to use 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -178,7 +178,18 @@ containing a value of this type.
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int environment=0x7f010012;
+        public static final int environment=0x7f010019;
+        /**  Path in the asset folder to custom font to use instead of the device default font. The font will not be rendered in the layout editor. 
+ Example 
+ widgets:fontPath="comic.ttf" 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fontPath=0x7f010006;
         /**  Fragment mode 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -190,12 +201,30 @@ containing a value of this type.
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int fragmentMode=0x7f010014;
+        public static final int fragmentMode=0x7f01001b;
         /**  A style resource specifing attributes to customize the look and feel of WalletFragment 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int fragmentStyle=0x7f010013;
+        public static final int fragmentStyle=0x7f01001a;
+        /**  Specifies how to place the content of an object, both
+         on the x- and y-axis, within the object itself. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Push object to the top of its container, not changing its size. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Push object to the bottom of its container, not changing its size. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Push object to the left of its container, not changing its size. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Push object to the right of its container, not changing its size. </td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td> Place object in the vertical center of its container, not changing its size. </td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td> Place object in the horizontal center of its container, not changing its size. </td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td> Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. </td></tr>
+</table>
+         */
+        public static final int gravity=0x7f010000;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -209,31 +238,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int mapType=0x7f010003;
+        public static final int mapType=0x7f01000a;
         /**  Masked wallet details background 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsBackground=0x7f01001b;
+        public static final int maskedWalletDetailsBackground=0x7f010022;
         /**  "Change" button background in masked wallet details view 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int maskedWalletDetailsButtonBackground=0x7f01001d;
+        public static final int maskedWalletDetailsButtonBackground=0x7f010024;
         /**  TextAppearance for the "Change" button in masked wallet details view 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsButtonTextAppearance=0x7f01001c;
+        public static final int maskedWalletDetailsButtonTextAppearance=0x7f010023;
         /**  TextAppearance for headers describing masked wallet details 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f01001a;
+        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f010021;
         /**  Type of the wallet logo image in masked wallet details view 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -245,7 +274,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int maskedWalletDetailsLogoImageType=0x7f01001f;
+        public static final int maskedWalletDetailsLogoImageType=0x7f010026;
         /**  Color of the Google Wallet logo text in masked wallet details view 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -255,12 +284,94 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int maskedWalletDetailsLogoTextColor=0x7f01001e;
+        public static final int maskedWalletDetailsLogoTextColor=0x7f010025;
         /**  TextAppearance for masked wallet details 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int maskedWalletDetailsTextAppearance=0x7f010019;
+        public static final int maskedWalletDetailsTextAppearance=0x7f010020;
+        /**  Formatting template for default values. Accepts DateFormat formatting. 
+ Example 
+ widgets:timeType="months" 
+ widgets:template="MM"  
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int template=0x7f010005;
+        /**  An array of strings that should be displayed over time. It should have the same number of strings as the number of states indicated by the timeType. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textArray=0x7f010003;
+        /**  The font size. Use pixels to prevent scaling. 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td> The view should be as big as its parent (minus padding). It will make the view find a size that allows for the current text to fit within the parent. </td></tr>
+</table>
+         */
+        public static final int textSize=0x7f010002;
+        /**  Offsets the time forwards or backwards by a number of seconds. 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int timeOffset=0x7f010001;
+        /**  Type indicating which time period the view should represent. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>constant</code></td><td>0</td><td> Indicates that the view is not changing with time. It has 1 state. </td></tr>
+<tr><td><code>seconds</code></td><td>1</td><td> Makes the view represent the seconds of a clock. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource. Due to battery constraints, this timeType may not be visible at all times. </td></tr>
+<tr><td><code>seconds_digit2</code></td><td>2</td><td> Makes the view represent the ten part of seconds. It has 6 states. </td></tr>
+<tr><td><code>seconds_digit1</code></td><td>3</td><td> Makes the view represent the one part of seconds. It has 10 states. </td></tr>
+<tr><td><code>minutes</code></td><td>4</td><td> Makes the view represent the minutes of a clock. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource </td></tr>
+<tr><td><code>minutes_digit2</code></td><td>5</td><td> Makes the view represent the ten part of seconds. It has 6 states. </td></tr>
+<tr><td><code>minutes_digit1</code></td><td>6</td><td> Makes the view represent the one part of seconds. It has 10 states. </td></tr>
+<tr><td><code>hours</code></td><td>7</td><td> Makes the view represent the hours of a clock. It has 24 states. </td></tr>
+<tr><td><code>hours_digit2</code></td><td>8</td><td> Makes the view represent the one part of hours. It has 3 states. </td></tr>
+<tr><td><code>hours_digit1</code></td><td>9</td><td> Makes the view represent the ten part of hours. It has 10 states. </td></tr>
+<tr><td><code>days_of_week</code></td><td>10</td><td> Makes the view represent the days of the week. It has 7 states. </td></tr>
+<tr><td><code>days_of_month</code></td><td>11</td><td> Makes the view represent the days of the month. It has 31 states. </td></tr>
+<tr><td><code>days_of_month_digit2</code></td><td>12</td><td> Makes the view represent the one part of the days of the month. It has 4 states. </td></tr>
+<tr><td><code>days_of_month_digit1</code></td><td>13</td><td> Makes the view represent the ten part of the days of the month. It has 10 states. </td></tr>
+<tr><td><code>days_of_year</code></td><td>14</td><td> Makes the view represent the days of the year. It has 366 states. </td></tr>
+<tr><td><code>days_of_year_digit3</code></td><td>15</td><td> Makes the view represent the hundred part of the days of the year. It has 4 states. </td></tr>
+<tr><td><code>days_of_year_digit2</code></td><td>16</td><td> Makes the view represent the ten part of the days of the year. It has 10 states. </td></tr>
+<tr><td><code>days_of_year_digit1</code></td><td>17</td><td> Makes the view represent the one part of the days of the year. It has 10 states. </td></tr>
+<tr><td><code>months</code></td><td>18</td><td> Makes the view represent the months of the year. It has 12 states. </td></tr>
+<tr><td><code>months_digit2</code></td><td>19</td><td> Makes the view represent the ten part of the months of the year. It has 2 states. </td></tr>
+<tr><td><code>months_digit1</code></td><td>20</td><td> Makes the view represent the one part of the months of the year. It has 10 states. </td></tr>
+<tr><td><code>years_digit4</code></td><td>21</td><td> Makes the view represent the thousand part of the years. It has 10 states. </td></tr>
+<tr><td><code>years_digit3</code></td><td>22</td><td> Makes the view represent the hundred part of the years. It has 10 states. </td></tr>
+<tr><td><code>years_digit2</code></td><td>23</td><td> Makes the view represent the ten part of the years. It has 10 states. </td></tr>
+<tr><td><code>years_digit1</code></td><td>24</td><td> Makes the view represent the one part of the years. It has 10 states. </td></tr>
+<tr><td><code>am_pm</code></td><td>25</td><td> Makes the view represent the AM/PM part of a clock. It has 2 states. </td></tr>
+<tr><td><code>hours_fine</code></td><td>26</td><td> Makes the view represent the hours of a clock, switching every 12 minutes. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource. </td></tr>
+</table>
+         */
+        public static final int timeType=0x7f010004;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -268,7 +379,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f010009;
+        public static final int uiCompass=0x7f010010;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -276,7 +387,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiRotateGestures=0x7f01000a;
+        public static final int uiRotateGestures=0x7f010011;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -284,7 +395,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiScrollGestures=0x7f01000b;
+        public static final int uiScrollGestures=0x7f010012;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -292,7 +403,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiTiltGestures=0x7f01000c;
+        public static final int uiTiltGestures=0x7f010013;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -300,7 +411,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomControls=0x7f01000d;
+        public static final int uiZoomControls=0x7f010014;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -308,7 +419,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomGestures=0x7f01000e;
+        public static final int uiZoomGestures=0x7f010015;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -316,7 +427,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int useViewLifecycle=0x7f01000f;
+        public static final int useViewLifecycle=0x7f010016;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -324,43 +435,57 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zOrderOnTop=0x7f010010;
+        public static final int zOrderOnTop=0x7f010017;
     }
     public static final class color {
-        public static final int common_action_bar_splitter=0x7f060009;
+        public static final int common_action_bar_splitter=0x7f07000f;
         /**  Sign-in Button Colors 
          */
-        public static final int common_signin_btn_dark_text_default=0x7f060000;
-        public static final int common_signin_btn_dark_text_disabled=0x7f060002;
-        public static final int common_signin_btn_dark_text_focused=0x7f060003;
-        public static final int common_signin_btn_dark_text_pressed=0x7f060001;
-        public static final int common_signin_btn_default_background=0x7f060008;
-        public static final int common_signin_btn_light_text_default=0x7f060004;
-        public static final int common_signin_btn_light_text_disabled=0x7f060006;
-        public static final int common_signin_btn_light_text_focused=0x7f060007;
-        public static final int common_signin_btn_light_text_pressed=0x7f060005;
-        public static final int common_signin_btn_text_dark=0x7f060017;
-        public static final int common_signin_btn_text_light=0x7f060018;
-        public static final int wallet_bright_foreground_disabled_holo_light=0x7f06000f;
+        public static final int common_signin_btn_dark_text_default=0x7f070006;
+        public static final int common_signin_btn_dark_text_disabled=0x7f070008;
+        public static final int common_signin_btn_dark_text_focused=0x7f070009;
+        public static final int common_signin_btn_dark_text_pressed=0x7f070007;
+        public static final int common_signin_btn_default_background=0x7f07000e;
+        public static final int common_signin_btn_light_text_default=0x7f07000a;
+        public static final int common_signin_btn_light_text_disabled=0x7f07000c;
+        public static final int common_signin_btn_light_text_focused=0x7f07000d;
+        public static final int common_signin_btn_light_text_pressed=0x7f07000b;
+        public static final int common_signin_btn_text_dark=0x7f070025;
+        public static final int common_signin_btn_text_light=0x7f070026;
+        public static final int darker_gray=0x7f07001e;
+        public static final int gray=0x7f07001d;
+        public static final int green=0x7f070021;
+        public static final int green_light=0x7f070022;
+        public static final int lighter_gray=0x7f07001f;
+        public static final int orange=0x7f070024;
+        public static final int red=0x7f070020;
+        public static final int smart_watch_2_text_color_grey=0x7f070003;
+        public static final int smart_watch_2_text_color_orange=0x7f070004;
+        public static final int smart_watch_2_text_color_white=0x7f070005;
+        public static final int smart_watch_text_color_grey=0x7f070000;
+        public static final int smart_watch_text_color_orange=0x7f070001;
+        public static final int smart_watch_text_color_white=0x7f070002;
+        public static final int wallet_bright_foreground_disabled_holo_light=0x7f070015;
         /** 
          Wallet colors to support consistent Wallet fragment holo dark UI in client application
          regardless of the theme and device type
     
          */
-        public static final int wallet_bright_foreground_holo_dark=0x7f06000a;
-        public static final int wallet_bright_foreground_holo_light=0x7f060010;
-        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f06000c;
-        public static final int wallet_dim_foreground_holo_dark=0x7f06000b;
-        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f06000e;
-        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f06000d;
-        public static final int wallet_highlighted_text_holo_dark=0x7f060014;
-        public static final int wallet_highlighted_text_holo_light=0x7f060013;
-        public static final int wallet_hint_foreground_holo_dark=0x7f060012;
-        public static final int wallet_hint_foreground_holo_light=0x7f060011;
-        public static final int wallet_holo_blue_light=0x7f060015;
-        public static final int wallet_link_text_light=0x7f060016;
-        public static final int wallet_primary_text_holo_light=0x7f060019;
-        public static final int wallet_secondary_text_holo_dark=0x7f06001a;
+        public static final int wallet_bright_foreground_holo_dark=0x7f070010;
+        public static final int wallet_bright_foreground_holo_light=0x7f070016;
+        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f070012;
+        public static final int wallet_dim_foreground_holo_dark=0x7f070011;
+        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f070014;
+        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f070013;
+        public static final int wallet_highlighted_text_holo_dark=0x7f07001a;
+        public static final int wallet_highlighted_text_holo_light=0x7f070019;
+        public static final int wallet_hint_foreground_holo_dark=0x7f070018;
+        public static final int wallet_hint_foreground_holo_light=0x7f070017;
+        public static final int wallet_holo_blue_light=0x7f07001b;
+        public static final int wallet_link_text_light=0x7f07001c;
+        public static final int wallet_primary_text_holo_light=0x7f070027;
+        public static final int wallet_secondary_text_holo_dark=0x7f070028;
+        public static final int yellow=0x7f070023;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -370,200 +495,389 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f090000;
-        public static final int activity_vertical_margin=0x7f090001;
+        public static final int activity_horizontal_margin=0x7f06001b;
+        public static final int activity_vertical_margin=0x7f06001c;
+        public static final int headset_pro_control_height=0x7f060002;
+        public static final int headset_pro_control_width=0x7f060001;
+        public static final int headset_pro_text_size=0x7f060000;
+        public static final int smart_watch_2_control_height=0x7f060012;
+        public static final int smart_watch_2_control_width=0x7f060011;
+        public static final int smart_watch_2_statusbar_height=0x7f060013;
+        public static final int smart_watch_2_text_size_large=0x7f060018;
+        public static final int smart_watch_2_text_size_medium=0x7f060019;
+        public static final int smart_watch_2_text_size_small=0x7f06001a;
+        public static final int smart_watch_2_widget_cell_height=0x7f060017;
+        public static final int smart_watch_2_widget_cell_width=0x7f060016;
+        public static final int smart_watch_2_widget_height=0x7f060015;
+        public static final int smart_watch_2_widget_width=0x7f060014;
+        public static final int smart_watch_control_height=0x7f060004;
+        public static final int smart_watch_control_width=0x7f060003;
+        public static final int smart_watch_text_size_normal=0x7f06000b;
+        public static final int smart_watch_text_size_small=0x7f06000c;
+        /**  Badge only contain numbers and is language independant. 
+         */
+        public static final int smart_watch_text_size_widget_badge=0x7f060010;
+        public static final int smart_watch_text_size_widget_name=0x7f06000d;
+        public static final int smart_watch_text_size_widget_text=0x7f06000f;
+        public static final int smart_watch_text_size_widget_time=0x7f06000e;
+        public static final int smart_watch_widget_height_inner=0x7f060008;
+        public static final int smart_watch_widget_height_outer=0x7f060006;
+        public static final int smart_watch_widget_text_background_height=0x7f06000a;
+        public static final int smart_watch_widget_text_background_width=0x7f060009;
+        public static final int smart_watch_widget_width_inner=0x7f060007;
+        public static final int smart_watch_widget_width_outer=0x7f060005;
     }
     public static final class drawable {
-        public static final int common_full_open_on_phone=0x7f020000;
-        public static final int common_ic_googleplayservices=0x7f020001;
-        public static final int common_signin_btn_icon_dark=0x7f020002;
-        public static final int common_signin_btn_icon_disabled_dark=0x7f020003;
-        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020004;
-        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020005;
-        public static final int common_signin_btn_icon_disabled_light=0x7f020006;
-        public static final int common_signin_btn_icon_focus_dark=0x7f020007;
-        public static final int common_signin_btn_icon_focus_light=0x7f020008;
-        public static final int common_signin_btn_icon_light=0x7f020009;
-        public static final int common_signin_btn_icon_normal_dark=0x7f02000a;
-        public static final int common_signin_btn_icon_normal_light=0x7f02000b;
-        public static final int common_signin_btn_icon_pressed_dark=0x7f02000c;
-        public static final int common_signin_btn_icon_pressed_light=0x7f02000d;
-        public static final int common_signin_btn_text_dark=0x7f02000e;
-        public static final int common_signin_btn_text_disabled_dark=0x7f02000f;
-        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020010;
-        public static final int common_signin_btn_text_disabled_focus_light=0x7f020011;
-        public static final int common_signin_btn_text_disabled_light=0x7f020012;
-        public static final int common_signin_btn_text_focus_dark=0x7f020013;
-        public static final int common_signin_btn_text_focus_light=0x7f020014;
-        public static final int common_signin_btn_text_light=0x7f020015;
-        public static final int common_signin_btn_text_normal_dark=0x7f020016;
-        public static final int common_signin_btn_text_normal_light=0x7f020017;
-        public static final int common_signin_btn_text_pressed_dark=0x7f020018;
-        public static final int common_signin_btn_text_pressed_light=0x7f020019;
-        public static final int ic_launcher=0x7f02001a;
-        public static final int ic_plusone_medium_off_client=0x7f02001b;
-        public static final int ic_plusone_small_off_client=0x7f02001c;
-        public static final int ic_plusone_standard_off_client=0x7f02001d;
-        public static final int ic_plusone_tall_off_client=0x7f02001e;
-        public static final int powered_by_google_dark=0x7f02001f;
-        public static final int powered_by_google_light=0x7f020020;
+        public static final int actions_1=0x7f020000;
+        public static final int actions_2=0x7f020001;
+        public static final int actions_3=0x7f020002;
+        public static final int actions_view_in_phone=0x7f020003;
+        public static final int badge_counter=0x7f020004;
+        public static final int bar_bg=0x7f020005;
+        public static final int common_full_open_on_phone=0x7f020006;
+        public static final int common_ic_googleplayservices=0x7f020007;
+        public static final int common_signin_btn_icon_dark=0x7f020008;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020009;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f02000a;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f02000b;
+        public static final int common_signin_btn_icon_disabled_light=0x7f02000c;
+        public static final int common_signin_btn_icon_focus_dark=0x7f02000d;
+        public static final int common_signin_btn_icon_focus_light=0x7f02000e;
+        public static final int common_signin_btn_icon_light=0x7f02000f;
+        public static final int common_signin_btn_icon_normal_dark=0x7f020010;
+        public static final int common_signin_btn_icon_normal_light=0x7f020011;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f020012;
+        public static final int common_signin_btn_icon_pressed_light=0x7f020013;
+        public static final int common_signin_btn_text_dark=0x7f020014;
+        public static final int common_signin_btn_text_disabled_dark=0x7f020015;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020016;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f020017;
+        public static final int common_signin_btn_text_disabled_light=0x7f020018;
+        public static final int common_signin_btn_text_focus_dark=0x7f020019;
+        public static final int common_signin_btn_text_focus_light=0x7f02001a;
+        public static final int common_signin_btn_text_light=0x7f02001b;
+        public static final int common_signin_btn_text_normal_dark=0x7f02001c;
+        public static final int common_signin_btn_text_normal_light=0x7f02001d;
+        public static final int common_signin_btn_text_pressed_dark=0x7f02001e;
+        public static final int common_signin_btn_text_pressed_light=0x7f02001f;
+        public static final int headset_pro_cancel_icn=0x7f020020;
+        public static final int headset_pro_focus_xs_icn=0x7f020021;
+        public static final int headset_pro_ok_icn=0x7f020022;
+        public static final int ic_launcher=0x7f020023;
+        public static final int ic_plusone_medium_off_client=0x7f020024;
+        public static final int ic_plusone_small_off_client=0x7f020025;
+        public static final int ic_plusone_standard_off_client=0x7f020026;
+        public static final int ic_plusone_tall_off_client=0x7f020027;
+        public static final int icn_18x18_black_white_message_notification=0x7f020028;
+        public static final int icn_18x18_message_notification=0x7f020029;
+        public static final int icn_30x30_message_notification=0x7f02002a;
+        public static final int icon=0x7f02002b;
+        public static final int icon_extension=0x7f02002c;
+        public static final int icon_extension48=0x7f02002d;
+        public static final int icon_extension_48=0x7f02002e;
+        public static final int logo=0x7f02002f;
+        public static final int logo_item=0x7f020030;
+        public static final int mybutton=0x7f020031;
+        public static final int powered_by_google_dark=0x7f020032;
+        public static final int powered_by_google_light=0x7f020033;
+        public static final int smartwatch_ui_one=0x7f020034;
+        public static final int smartwatch_ui_two=0x7f020035;
+        public static final int text_bg=0x7f020036;
+        public static final int textview_circle_design_green=0x7f020037;
+        public static final int textview_circle_design_orange=0x7f020038;
+        public static final int textview_circle_design_red=0x7f020039;
+        public static final int textview_circle_design_yellow=0x7f02003a;
+        public static final int thumbnail_list_item=0x7f02003b;
+        public static final int widget_default_userpic_bg=0x7f02003c;
+        public static final int widget_frame=0x7f02003d;
     }
     public static final class id {
-        public static final int action_settings=0x7f070015;
-        public static final int book_now=0x7f070010;
-        public static final int button1=0x7f070014;
-        public static final int buyButton=0x7f07000a;
-        public static final int buy_now=0x7f07000f;
-        public static final int buy_with_google=0x7f07000e;
-        public static final int classic=0x7f070011;
-        public static final int grayscale=0x7f070012;
-        public static final int holo_dark=0x7f070005;
-        public static final int holo_light=0x7f070006;
-        public static final int hybrid=0x7f070004;
-        public static final int match_parent=0x7f07000c;
-        public static final int monochrome=0x7f070013;
-        public static final int none=0x7f070000;
-        public static final int normal=0x7f070001;
-        public static final int production=0x7f070007;
-        public static final int sandbox=0x7f070008;
-        public static final int satellite=0x7f070002;
-        public static final int selectionDetails=0x7f07000b;
-        public static final int strict_sandbox=0x7f070009;
-        public static final int terrain=0x7f070003;
-        public static final int wrap_content=0x7f07000d;
+        public static final int ExpList=0x7f05003f;
+        public static final int action_settings=0x7f050069;
+        public static final int am_pm=0x7f050021;
+        public static final int body=0x7f050048;
+        public static final int body2=0x7f050062;
+        public static final int book_now=0x7f050032;
+        public static final int bottom=0x7f050001;
+        public static final int btn2=0x7f050042;
+        public static final int btnBack=0x7f050065;
+        public static final int btnFilter=0x7f050038;
+        public static final int btnInf=0x7f050039;
+        public static final int btnSelect=0x7f050066;
+        public static final int btnUI=0x7f050037;
+        public static final int btnUIName=0x7f050064;
+        public static final int btn_show_bitmap=0x7f05004c;
+        public static final int btn_update_layout=0x7f05004e;
+        public static final int btn_update_this=0x7f05004d;
+        public static final int buttons=0x7f05003e;
+        public static final int buyButton=0x7f05002d;
+        public static final int buy_now=0x7f050031;
+        public static final int buy_with_google=0x7f050030;
+        public static final int center=0x7f050006;
+        public static final int center_horizontal=0x7f050005;
+        public static final int center_vertical=0x7f050004;
+        public static final int checkbox=0x7f050046;
+        public static final int childMaster=0x7f050043;
+        public static final int chk_box=0x7f050054;
+        public static final int classic=0x7f050033;
+        public static final int constant=0x7f050008;
+        public static final int content_container=0x7f050049;
+        public static final int days_of_month=0x7f050013;
+        public static final int days_of_month_digit1=0x7f050015;
+        public static final int days_of_month_digit2=0x7f050014;
+        public static final int days_of_week=0x7f050012;
+        public static final int days_of_year=0x7f050016;
+        public static final int days_of_year_digit1=0x7f050019;
+        public static final int days_of_year_digit2=0x7f050018;
+        public static final int days_of_year_digit3=0x7f050017;
+        public static final int dist=0x7f050056;
+        public static final int divider=0x7f050050;
+        public static final int gallery=0x7f050051;
+        public static final int grayscale=0x7f050034;
+        public static final int header=0x7f05004f;
+        public static final int holo_dark=0x7f050028;
+        public static final int holo_light=0x7f050029;
+        public static final int hours=0x7f05000f;
+        public static final int hours_digit1=0x7f050011;
+        public static final int hours_digit2=0x7f050010;
+        public static final int hours_fine=0x7f050022;
+        public static final int hybrid=0x7f050027;
+        public static final int image=0x7f05004b;
+        public static final int imageView1=0x7f050036;
+        public static final int ivUIOne=0x7f050067;
+        public static final int ivUITwo=0x7f050068;
+        public static final int left=0x7f050002;
+        public static final int linear=0x7f05003a;
+        public static final int listView=0x7f050052;
+        public static final int listview=0x7f050053;
+        public static final int match_parent=0x7f050007;
+        public static final int minutes=0x7f05000c;
+        public static final int minutes_digit1=0x7f05000e;
+        public static final int minutes_digit2=0x7f05000d;
+        public static final int monochrome=0x7f050035;
+        public static final int months=0x7f05001a;
+        public static final int months_digit1=0x7f05001c;
+        public static final int months_digit2=0x7f05001b;
+        public static final int name=0x7f050055;
+        public static final int none=0x7f050023;
+        public static final int normal=0x7f050024;
+        public static final int pager=0x7f050063;
+        public static final int production=0x7f05002a;
+        public static final int right=0x7f050003;
+        public static final int root=0x7f05003d;
+        public static final int row1=0x7f05004a;
+        public static final int sandbox=0x7f05002b;
+        public static final int satellite=0x7f050025;
+        public static final int seconds=0x7f050009;
+        public static final int seconds_digit1=0x7f05000b;
+        public static final int seconds_digit2=0x7f05000a;
+        public static final int selectionDetails=0x7f05002e;
+        public static final int setup_macroCancelbtn=0x7f050040;
+        public static final int setup_macroSavebtn=0x7f050041;
+        public static final int smart_watch_notification_widget_background=0x7f050057;
+        public static final int smart_watch_notification_widget_text_background=0x7f050058;
+        public static final int smart_watch_notification_widget_text_name=0x7f05005b;
+        public static final int smart_watch_notification_widget_text_time=0x7f050059;
+        public static final int smart_watch_notification_widget_text_title=0x7f05005a;
+        public static final int smart_watch_widget_custom_image=0x7f05005c;
+        public static final int smart_watch_widget_custom_text_view=0x7f05005d;
+        public static final int smart_watch_widget_event_counter_badge=0x7f05005f;
+        public static final int smart_watch_widget_event_counter_text=0x7f050060;
+        public static final int smart_watch_widget_icon=0x7f05005e;
+        public static final int strict_sandbox=0x7f05002c;
+        public static final int terrain=0x7f050026;
+        public static final int text=0x7f05003c;
+        public static final int title=0x7f050047;
+        public static final int top=0x7f050000;
+        public static final int tvChild=0x7f05003b;
+        public static final int tvCircle=0x7f050044;
+        public static final int tvGroup=0x7f050045;
+        public static final int tvavailability=0x7f050061;
+        public static final int wrap_content=0x7f05002f;
+        public static final int years_digit1=0x7f050020;
+        public static final int years_digit2=0x7f05001f;
+        public static final int years_digit3=0x7f05001e;
+        public static final int years_digit4=0x7f05001d;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f080000;
+        public static final int google_play_services_version=0x7f090000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int bitmap=0x7f030001;
+        public static final int childrow=0x7f030002;
+        public static final int expandable_main=0x7f030003;
+        public static final int grouprow=0x7f030004;
+        public static final int item_gallery=0x7f030005;
+        public static final int item_list_green=0x7f030006;
+        public static final int item_list_orange=0x7f030007;
+        public static final int item_list_red=0x7f030008;
+        public static final int item_list_yellow=0x7f030009;
+        public static final int layout=0x7f03000a;
+        public static final int layout_test_gallery=0x7f03000b;
+        public static final int layout_test_list=0x7f03000c;
+        public static final int main=0x7f03000d;
+        public static final int single_listview_item=0x7f03000e;
+        public static final int smart_watch_notification_widget=0x7f03000f;
+        public static final int smart_watch_widget=0x7f030010;
+        public static final int ui2_item_green=0x7f030011;
+        public static final int ui2_item_orange=0x7f030012;
+        public static final int ui2_item_red=0x7f030013;
+        public static final int ui2_item_yellow=0x7f030014;
+        public static final int user_interface_manager=0x7f030015;
+        public static final int user_interface_manager_one=0x7f030016;
+        public static final int user_interface_manager_two=0x7f030017;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
     }
     public static final class string {
-        public static final int accept=0x7f050002;
-        public static final int action_settings=0x7f050025;
-        public static final int app_name=0x7f050023;
+        public static final int accept=0x7f040003;
+        public static final int action_settings=0x7f040025;
+        public static final int alertDialogButtonOne=0x7f040033;
+        public static final int alertDialogButtonTwo=0x7f040034;
+        public static final int alertDialogText=0x7f040032;
+        public static final int alertDialogTitle=0x7f040031;
+        /**  At least one dummy resource is needed to satisfy aapt.
+    Otherwise it complains about no res folder. 
+         */
+        public static final int app_name=0x7f040000;
+        public static final int btnBack=0x7f04002b;
+        public static final int btnFilter=0x7f040028;
+        public static final int btnInfo=0x7f040027;
+        public static final int btnSelect=0x7f04002c;
+        public static final int btnSettings=0x7f040030;
+        public static final int btnSort=0x7f04002f;
+        public static final int btnUIChange=0x7f040026;
+        public static final int btnUIName=0x7f04002a;
         /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
-        public static final int common_android_wear_notification_needs_update_text=0x7f050009;
+        public static final int common_android_wear_notification_needs_update_text=0x7f04000a;
         /**  Message in confirmation dialog informing user that they need to update
         the Android Wear app [CHAR LIMIT=NONE] 
          */
-        public static final int common_android_wear_update_text=0x7f050016;
+        public static final int common_android_wear_update_text=0x7f040017;
         /**  Title of confirmation dialog informing user that they need to update
         the Android Wear app (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_android_wear_update_title=0x7f050014;
+        public static final int common_android_wear_update_title=0x7f040015;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_button=0x7f050012;
+        public static final int common_google_play_services_enable_button=0x7f040013;
         /**  Message in confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_enable_text=0x7f050011;
+        public static final int common_google_play_services_enable_text=0x7f040012;
         /**  Title of confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_title=0x7f050010;
+        public static final int common_google_play_services_enable_title=0x7f040011;
         /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
          */
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f05000b;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f04000c;
         /**  Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_button=0x7f05000f;
+        public static final int common_google_play_services_install_button=0x7f040010;
         /**  (For phones) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_phone=0x7f05000d;
+        public static final int common_google_play_services_install_text_phone=0x7f04000e;
         /**  (For tablets) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_tablet=0x7f05000e;
+        public static final int common_google_play_services_install_text_tablet=0x7f04000f;
         /**  Title of confirmation dialog informing user that they need to install
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_title=0x7f05000c;
+        public static final int common_google_play_services_install_title=0x7f04000d;
         /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_invalid_account_text=0x7f05001a;
+        public static final int common_google_play_services_invalid_account_text=0x7f04001b;
         /**  Title of confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_invalid_account_title=0x7f050019;
+        public static final int common_google_play_services_invalid_account_title=0x7f04001a;
         /**   Title for notification shown when GooglePlayServices needs to be enabled for an
         application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_needs_enabling_title=0x7f05000a;
+        public static final int common_google_play_services_needs_enabling_title=0x7f04000b;
         /**  Message in confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_network_error_text=0x7f050018;
+        public static final int common_google_play_services_network_error_text=0x7f040019;
         /**  Title of confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_network_error_title=0x7f050017;
+        public static final int common_google_play_services_network_error_title=0x7f040018;
         /**   Title for notification shown when GooglePlayServices needs to be installed
         for an application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_notification_needs_installation_title=0x7f050007;
+        public static final int common_google_play_services_notification_needs_installation_title=0x7f040008;
         /**   Title for notification shown when GooglePlayServices needs to be updated for an
         application to work. [CHAR LIMIT=70] 
          */
-        public static final int common_google_play_services_notification_needs_update_title=0x7f050008;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f040009;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
          */
-        public static final int common_google_play_services_notification_ticker=0x7f050006;
+        public static final int common_google_play_services_notification_ticker=0x7f040007;
         /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
         services [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unknown_issue=0x7f05001b;
+        public static final int common_google_play_services_unknown_issue=0x7f04001c;
         /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_text=0x7f05001d;
+        public static final int common_google_play_services_unsupported_text=0x7f04001e;
         /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_unsupported_title=0x7f05001c;
+        public static final int common_google_play_services_unsupported_title=0x7f04001d;
         /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_button=0x7f05001e;
+        public static final int common_google_play_services_update_button=0x7f04001f;
         /**  Message in confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_update_text=0x7f050015;
+        public static final int common_google_play_services_update_text=0x7f040016;
         /**  Title of confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_title=0x7f050013;
+        public static final int common_google_play_services_update_title=0x7f040014;
         /**  Label for an action to open a notifications content on the phone [CHAR LIMIT=25] 
          */
-        public static final int common_open_on_phone=0x7f050021;
+        public static final int common_open_on_phone=0x7f040022;
         /**  Sign-in button text [CHAR LIMIT=15] 
          */
-        public static final int common_signin_button_text=0x7f05001f;
+        public static final int common_signin_button_text=0x7f040020;
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
-        public static final int common_signin_button_text_long=0x7f050020;
-        public static final int create_calendar_message=0x7f050005;
-        public static final int create_calendar_title=0x7f050004;
-        public static final int decline=0x7f050003;
-        public static final int hello_world=0x7f050024;
-        public static final int store_picture_message=0x7f050001;
-        public static final int store_picture_title=0x7f050000;
+        public static final int common_signin_button_text_long=0x7f040021;
+        public static final int configuration_text=0x7f04002d;
+        public static final int create_calendar_message=0x7f040006;
+        public static final int create_calendar_title=0x7f040005;
+        public static final int decline=0x7f040004;
+        public static final int extension_name=0x7f04002e;
+        public static final int hello_world=0x7f040024;
+        public static final int imgDescription=0x7f040029;
+        public static final int reset_layout=0x7f040037;
+        public static final int store_picture_message=0x7f040002;
+        public static final int store_picture_title=0x7f040001;
+        public static final int text_show_bitmap=0x7f040035;
+        public static final int text_show_layout=0x7f040038;
+        public static final int text_tap_to_update=0x7f040036;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
-        public static final int wallet_buy_button_place_holder=0x7f050022;
+        public static final int wallet_buy_button_place_holder=0x7f040023;
     }
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -577,21 +891,23 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f040005;
+        public static final int AppBaseTheme=0x7f080005;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040006;
-        public static final int Theme_IAPTheme=0x7f040000;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f040003;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f040002;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f040001;
+        public static final int AppTheme=0x7f080008;
+        public static final int SettingCodeFont=0x7f080007;
+        public static final int SettingCodeFontBold=0x7f080006;
+        public static final int Theme_IAPTheme=0x7f080000;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f080003;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f080002;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f080001;
         /** 
          Default style of the wallet fragment that will be used if not set explicitly
          when fragment is created
     
          */
-        public static final int WalletFragmentDefaultStyle=0x7f040004;
+        public static final int WalletFragmentDefaultStyle=0x7f080004;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -611,7 +927,7 @@ containing a value of this type.
            @see #AdsAttrs_adUnitId
          */
         public static final int[] AdsAttrs = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f010007, 0x7f010008, 0x7f010009
         };
         /**
           <p>
@@ -706,10 +1022,10 @@ containing a value of this type.
            @see #MapAttrs_zOrderOnTop
          */
         public static final int[] MapAttrs = {
-            0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006,
-            0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a,
-            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
-            0x7f01000f, 0x7f010010
+            0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d,
+            0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011,
+            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
+            0x7f010016, 0x7f010017
         };
         /**
           <p>This symbol is the offset where the {@link hr.foi.evolaris.skilift.R.attr#cameraBearing}
@@ -913,6 +1229,204 @@ containing a value of this type.
           @attr name hr.foi.evolaris.skilift:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 13;
+        /** Attributes that can be used with a TimeLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TimeLayout_gravity hr.foi.evolaris.skilift:gravity}</code></td><td> Specifies how to place the content of an object, both
+         on the x- and y-axis, within the object itself.</td></tr>
+           <tr><td><code>{@link #TimeLayout_timeOffset hr.foi.evolaris.skilift:timeOffset}</code></td><td> Offsets the time forwards or backwards by a number of seconds.</td></tr>
+           </table>
+           @see #TimeLayout_gravity
+           @see #TimeLayout_timeOffset
+         */
+        public static final int[] TimeLayout = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>
+          @attr description
+           Specifies how to place the content of an object, both
+         on the x- and y-axis, within the object itself. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Push object to the top of its container, not changing its size. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Push object to the bottom of its container, not changing its size. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Push object to the left of its container, not changing its size. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Push object to the right of its container, not changing its size. </td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td> Place object in the vertical center of its container, not changing its size. </td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td> Place object in the horizontal center of its container, not changing its size. </td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td> Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name hr.foi.evolaris.skilift:gravity
+        */
+        public static final int TimeLayout_gravity = 0;
+        /**
+          <p>
+          @attr description
+           Offsets the time forwards or backwards by a number of seconds. 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name hr.foi.evolaris.skilift:timeOffset
+        */
+        public static final int TimeLayout_timeOffset = 1;
+        /** Attributes that can be used with a TimeView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TimeView_fontPath hr.foi.evolaris.skilift:fontPath}</code></td><td> Path in the asset folder to custom font to use instead of the device default font.</td></tr>
+           <tr><td><code>{@link #TimeView_template hr.foi.evolaris.skilift:template}</code></td><td> Formatting template for default values.</td></tr>
+           <tr><td><code>{@link #TimeView_textArray hr.foi.evolaris.skilift:textArray}</code></td><td> An array of strings that should be displayed over time.</td></tr>
+           <tr><td><code>{@link #TimeView_textSize hr.foi.evolaris.skilift:textSize}</code></td><td> The font size.</td></tr>
+           <tr><td><code>{@link #TimeView_timeType hr.foi.evolaris.skilift:timeType}</code></td><td> Type indicating which time period the view should represent.</td></tr>
+           </table>
+           @see #TimeView_fontPath
+           @see #TimeView_template
+           @see #TimeView_textArray
+           @see #TimeView_textSize
+           @see #TimeView_timeType
+         */
+        public static final int[] TimeView = {
+            0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005,
+            0x7f010006
+        };
+        /**
+          <p>
+          @attr description
+           Path in the asset folder to custom font to use instead of the device default font. The font will not be rendered in the layout editor. 
+ Example 
+ widgets:fontPath="comic.ttf" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name hr.foi.evolaris.skilift:fontPath
+        */
+        public static final int TimeView_fontPath = 4;
+        /**
+          <p>
+          @attr description
+           Formatting template for default values. Accepts DateFormat formatting. 
+ Example 
+ widgets:timeType="months" 
+ widgets:template="MM"  
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name hr.foi.evolaris.skilift:template
+        */
+        public static final int TimeView_template = 3;
+        /**
+          <p>
+          @attr description
+           An array of strings that should be displayed over time. It should have the same number of strings as the number of states indicated by the timeType. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name hr.foi.evolaris.skilift:textArray
+        */
+        public static final int TimeView_textArray = 1;
+        /**
+          <p>
+          @attr description
+           The font size. Use pixels to prevent scaling. 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td> The view should be as big as its parent (minus padding). It will make the view find a size that allows for the current text to fit within the parent. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name hr.foi.evolaris.skilift:textSize
+        */
+        public static final int TimeView_textSize = 0;
+        /**
+          <p>
+          @attr description
+           Type indicating which time period the view should represent. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>constant</code></td><td>0</td><td> Indicates that the view is not changing with time. It has 1 state. </td></tr>
+<tr><td><code>seconds</code></td><td>1</td><td> Makes the view represent the seconds of a clock. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource. Due to battery constraints, this timeType may not be visible at all times. </td></tr>
+<tr><td><code>seconds_digit2</code></td><td>2</td><td> Makes the view represent the ten part of seconds. It has 6 states. </td></tr>
+<tr><td><code>seconds_digit1</code></td><td>3</td><td> Makes the view represent the one part of seconds. It has 10 states. </td></tr>
+<tr><td><code>minutes</code></td><td>4</td><td> Makes the view represent the minutes of a clock. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource </td></tr>
+<tr><td><code>minutes_digit2</code></td><td>5</td><td> Makes the view represent the ten part of seconds. It has 6 states. </td></tr>
+<tr><td><code>minutes_digit1</code></td><td>6</td><td> Makes the view represent the one part of seconds. It has 10 states. </td></tr>
+<tr><td><code>hours</code></td><td>7</td><td> Makes the view represent the hours of a clock. It has 24 states. </td></tr>
+<tr><td><code>hours_digit2</code></td><td>8</td><td> Makes the view represent the one part of hours. It has 3 states. </td></tr>
+<tr><td><code>hours_digit1</code></td><td>9</td><td> Makes the view represent the ten part of hours. It has 10 states. </td></tr>
+<tr><td><code>days_of_week</code></td><td>10</td><td> Makes the view represent the days of the week. It has 7 states. </td></tr>
+<tr><td><code>days_of_month</code></td><td>11</td><td> Makes the view represent the days of the month. It has 31 states. </td></tr>
+<tr><td><code>days_of_month_digit2</code></td><td>12</td><td> Makes the view represent the one part of the days of the month. It has 4 states. </td></tr>
+<tr><td><code>days_of_month_digit1</code></td><td>13</td><td> Makes the view represent the ten part of the days of the month. It has 10 states. </td></tr>
+<tr><td><code>days_of_year</code></td><td>14</td><td> Makes the view represent the days of the year. It has 366 states. </td></tr>
+<tr><td><code>days_of_year_digit3</code></td><td>15</td><td> Makes the view represent the hundred part of the days of the year. It has 4 states. </td></tr>
+<tr><td><code>days_of_year_digit2</code></td><td>16</td><td> Makes the view represent the ten part of the days of the year. It has 10 states. </td></tr>
+<tr><td><code>days_of_year_digit1</code></td><td>17</td><td> Makes the view represent the one part of the days of the year. It has 10 states. </td></tr>
+<tr><td><code>months</code></td><td>18</td><td> Makes the view represent the months of the year. It has 12 states. </td></tr>
+<tr><td><code>months_digit2</code></td><td>19</td><td> Makes the view represent the ten part of the months of the year. It has 2 states. </td></tr>
+<tr><td><code>months_digit1</code></td><td>20</td><td> Makes the view represent the one part of the months of the year. It has 10 states. </td></tr>
+<tr><td><code>years_digit4</code></td><td>21</td><td> Makes the view represent the thousand part of the years. It has 10 states. </td></tr>
+<tr><td><code>years_digit3</code></td><td>22</td><td> Makes the view represent the hundred part of the years. It has 10 states. </td></tr>
+<tr><td><code>years_digit2</code></td><td>23</td><td> Makes the view represent the ten part of the years. It has 10 states. </td></tr>
+<tr><td><code>years_digit1</code></td><td>24</td><td> Makes the view represent the one part of the years. It has 10 states. </td></tr>
+<tr><td><code>am_pm</code></td><td>25</td><td> Makes the view represent the AM/PM part of a clock. It has 2 states. </td></tr>
+<tr><td><code>hours_fine</code></td><td>26</td><td> Makes the view represent the hours of a clock, switching every 12 minutes. It has 60 states. If only one background resource is provided for this type, the other 59 resources will be created by rotating the initial resource. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name hr.foi.evolaris.skilift:timeType
+        */
+        public static final int TimeView_timeType = 2;
         /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
            <p>Includes the following attributes:</p>
            <table>
@@ -930,7 +1444,7 @@ containing a value of this type.
            @see #WalletFragmentOptions_fragmentStyle
          */
         public static final int[] WalletFragmentOptions = {
-            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b
         };
         /**
           <p>
@@ -1034,9 +1548,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
          */
         public static final int[] WalletFragmentStyle = {
-            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
-            0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c,
-            0x7f01001d, 0x7f01001e, 0x7f01001f
+            0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f,
+            0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023,
+            0x7f010024, 0x7f010025, 0x7f010026
         };
         /**
           <p>
