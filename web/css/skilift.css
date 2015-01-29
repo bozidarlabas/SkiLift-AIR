@@ -1,0 +1,34 @@
+#description{
+    background-color: #269abc;
+    text-align: center;
+}
+
+#description p{
+    font-size: 16px;
+    font-family: Courier;
+}
+
+#lift,#container{
+    border-color: crimson;
+    border: solid 1px;
+    padding-bottom: 10px;
+
+}
+
+#lift{
+    background-color: #269abc;
+    font-weight: bold;
+}
+
+button[name="btn_high"]{
+    
+    background-color: #D9481C;
+    
+}
+
+
+.btn-danger {
+  color: #fff;
+  background-color: #FF0000;
+  border-color: #d43f3a;
+}
